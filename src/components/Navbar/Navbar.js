@@ -7,7 +7,7 @@ const TopBar = styled.nav`
   min-height: 72px;
   height: 10vh;
   display: flex;
-  background: linear-gradient(#DD3C00, #0500FF);
+  background: linear-gradient(#A0C6CC, #FE815B);
   position: relative;
   justify-content: space-between;
   align-items: center;

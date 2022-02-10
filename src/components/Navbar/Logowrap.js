@@ -8,9 +8,9 @@ const Logowrap = () => {
 				className="tiny-icon"
 				layout="fixed"
 				formats={["AUTO", "WEBP", "AVIF"]}
-				src="../../images/logo.png"
-				width={100}
-				height={100}
+				src="./logo.png"
+				width={70}
+				height={70}
 				quality={95}
 				alt="Elrond Shibas love you"
         />

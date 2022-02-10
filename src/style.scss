@@ -17,15 +17,22 @@ animations: ~200
 */
 
 /* jacks branding stuff */
-$jacks-red: #DD3C00;
-$jacks-green: #273824; // Dark Angels Mk VII
-$jacks-blue: #0500FF;
+$jacks-red: #FE815B;
+$jacks-blue: #A0C6CC;
 $jacks-red-invert: #fff;
 $primary: $jacks-red;
 $primary-invert: $jacks-red-invert;
 $black: #242;
 
-
+/* font pairing  */
+@font-face {
+  font-family: '04B30';
+  src: local('04B30.ttf'), url(./fonts/04B30.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PixelUnicode';
+  src: local('pixel-unicode-webfont.woff'), url(./fonts/pixel-unicode-webfont.woff) format('truetype');
+}
 
 /* typical Gatsby layout  */
 *,
@@ -206,8 +213,7 @@ ul, ol {
   align-items: center;
   min-height: 30vh;
   padding: 4rem;
-  background: -webkit-linear-gradient(270deg, rgba(221,60,0,0.8), rgba(45,0,0,0) 66.6%),-webkit-linear-gradient(0deg, rgba(0,153,199,0.8), rgba(0,45,0,0) 66.6%),-webkit-linear-gradient(90deg, rgba(5,0,255,0.8), rgba(0,0,45,0) 66.6%);
-  background: linear-gradient(270deg, rgba(221,60,0,0.8), rgba(45,0,0,0) 66.6%),linear-gradient(0deg, rgba(0,153,199,0.8), rgba(0,45,0,0) 66.6%),linear-gradient(90deg, rgba(5,0,255,0.8), rgba(0,0,45,0) 66.6%);
+  background: radial-gradient(#FE815B, #A0C6CC);
 }
 
 .bottommost-text {
@@ -348,6 +354,10 @@ a:focus {
   border-radius: 1vw;
   padding: 1.6rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+h1, h2 {
+  font-family: '04B30';
 }
 
 .fade {

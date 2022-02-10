@@ -10,7 +10,7 @@ const NavbarLinks = () => {
       <NavItem to="/media" className="is-hoverable creamsicle-text">Jacks.Media</NavItem>
       <NavItem to="/mining" className="is-hoverable creamsicle-text">Mining</NavItem>
       <NavItem to="/llc" className="is-hoverable creamsicle-text">Consulting</NavItem>
-      <NavItem to="/taichi" className="is-hoverable creamsicle-text">Tai Chi</NavItem>
+      <NavItem className="is-hoverable creamsicle-text"><a href="https://isengard.market/profile/ElrondShibas">Isengard</a></NavItem>
     </>
   )
 }

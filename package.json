@@ -1,8 +1,8 @@
 {
-  "name": "jacks-consulting-llc",
+  "name": "elrond-shibas",
   "private": true,
   "description": "PWA with Gatsby SSG",
-  "version": "0.6.21",
+  "version": "0.9.29",
   "author": "Alex Jacks <alex@j4cks.com>",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
@@ -56,7 +56,7 @@
   "devDependencies": {
     "prettier": "2.2.1"
   },
-  "homepage": "https://jacks.media",
+  "homepage": "https://elrondshibas.com",
   "keywords": [
     "gatsby"
   ],
@@ -64,7 +64,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacksmedia/media-hq"
+    "url": "git+https://github.com/jacksmedia/final"
   },
   "scripts": {
     "build": "gatsby build",

@@ -1,25 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Jacks Consulting LLC`,
+    title: `Elrond Shibas`,
     author: {
-      name: `J4cks`,
-      summary: `a human crypto-currency enthusiast just like you. `,
+      name: `Elrond Shibas`,
+      summary: `collectible Shiba pets made of Egold`,
     },
-    description: `Guide to getting started with cryptocurrency.`,
-    siteUrl: `https://j4cks.com/`,
+    description: `collectible Shiba pets made of Egold`,
+    siteUrl: `https://elrondshibas.com/`,
     social: {
-      twitter: `__j4cks__`,
+      twitter: `elrondshibas`,
     },
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Jacks Consulting LLC`,
-        short_name: `J4cks.com`,
+        name: `Elrond Shibas`,
+        short_name: `Elrond Shibas`,
         start_url: `/`,
-        background_color: `#0005FF`,
-        theme_color: `#DD3C00`,
+        background_color: `#030303`,
+        theme_color: `#D66C01`,
         display: `standalone`,
         icon: `src/images/gatsby-icon.png`,
         crossOrigin: `use-credentials`,
