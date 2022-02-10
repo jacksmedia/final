@@ -42,7 +42,7 @@ const Toggle = styled.div`
 const Navtray = styled.div`
   display: flex;
   height: 100%;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
 
   @media (max-width: 768px) {
@@ -50,11 +50,11 @@ const Navtray = styled.div`
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    padding-top: 72px;
-    background-color: #0500FF;
+    padding-top: 15vh;
+    background-color: #A0C6CC;
     transition: all 0.3s ease-in;
     top: 72px;
-    left: ${props => (props.open ? "-100%" : "0")};
+    right: ${props => (props.open ? "-100%" : "0")};
   }
 `
 

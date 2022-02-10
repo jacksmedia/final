@@ -360,6 +360,25 @@ h1, h2 {
   font-family: '04B30';
 }
 
+.svg-market-1 {
+  background-image: url(./images/deadrare.svg);
+  width: 12px;
+  height: 20px;
+  background-size: cover;
+}
+.svg-market-2 {
+  background-image: url(./images/trustmarket.svg);
+  width: 36px;
+  height: 15px;
+  background-size: cover;
+}
+.svg-market-3 {
+  background-image: url(./images/isengard.svg);
+  width: 8px;
+  height: 20px;
+  background-size: cover;
+}
+
 .fade {
   animation: fade-out-keyframes 1s;
 }
