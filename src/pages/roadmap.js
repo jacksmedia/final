@@ -16,7 +16,7 @@ const Roadmap = () => (
           <div class="date">Q1</div>
           <i class="icon fa fa-home"></i>
           <div class="content">
-            <h5>SHIB-50039b Mint Completed</h5>
+            <h4 className="roady-title">SHIB-50039b Mint Completed</h4>
             <p>All rewards and contents distro</p>
             <p>All Shibas offchain, in circulation</p>
           </div>
@@ -25,7 +25,7 @@ const Roadmap = () => (
           <div class="date">Q2</div>
           <i class="icon fa fa-home"></i>
           <div class="content">
-            <h5>ANIShib collection mint</h5>
+            <h4 className="roady-title">ANIShib collection mint</h4>
             <p>New ShibaWorld adventure begins!</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Roadmap = () => (
           <div class="date">Q2</div>
           <i class="icon fa fa-user"></i>
           <div class="content">
-            <h5>Elrond Shiba Merch Store</h5>
+            <h4 className="roady-title">Elrond Shiba Merch Store</h4>
             <p>Digs, Headpieces, Specs and more-- financed by CDO royalties</p>
             <p>Purchaseable with $WAFL, $USD</p>
           </div>
@@ -42,7 +42,7 @@ const Roadmap = () => (
           <div class="date">Q3</div>
           <i class="icon fa fa-gift"></i>
           <div class="content">
-            <h5>Mint 3DSHIB NFT collection</h5>
+            <h4 className="roady-title">Mint 3DSHIB NFT collection</h4>
             <p>such voxels bork</p>
             <p>$WAFL allowed as mint currency for 1/2 collection</p>
           </div>
@@ -51,7 +51,7 @@ const Roadmap = () => (
           <div class="date">Q3</div>
           <i class="icon fa fa-running"></i>
           <div class="content">
-            <h5>Gateway to ShibaWorld</h5>
+            <h4 className="roady-title">Gateway to ShibaWorld</h4>
             <p>Zoning assignemnt begins for Shiba Gardens, Shiba Farms, Shiba Castles, and Shiba Spaceports</p>
             <p>WAFL can purchase real estate in ShibaWorld.</p>
           </div>
@@ -60,7 +60,7 @@ const Roadmap = () => (
           <div class="date">Q4</div>
           <i class="icon fa fa-cog"></i>
           <div class="content">
-            <h5>ShibaWorld metaverse launch</h5>
+            <h4 className="roady-title">ShibaWorld metaverse launch</h4>
             <p>SHBWRLD NFTs become playable characters!</p>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Roadmap = () => (
           <div class="date">Q4</div>
           <i class="icon fa fa-certificate"></i>
           <div class="content">
-            <h5>$WAFL on MaiarDex</h5>
+            <h4 className="roady-title">$WAFL on MaiarDex</h4>
             <p>
             $WAFL registered as Tradeable Asset (SEC, other regulations fulfilled)
             </p>

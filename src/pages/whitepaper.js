@@ -61,7 +61,7 @@ const Whitepaper = () => (
       <div className="container is-fluid eshib-bg-10">
         <h2 className="pt-3">SHIBWRLD SFTs can be earned more than once (by holding for consecutive 28 day periods) and are TRADEABLE and SELLABLE</h2>
         <p>The SHIBWRLD NFT Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
-        <table className="table is-mobile">
+        <table className="table is-narrow">
           <thead>
             <tr>
               <th></th>

@@ -215,7 +215,7 @@ const IndexPage = () => (
           <h2 className="dark-forest-text">Ghosts need homes, too!</h2>
           <a href="/rarity" className="button">RARITY</a>
         </div>
-        <div className="slideshow2 column is-half is-hidden-mobile">
+        <div className="slideshow2 column is-half">
           <div className="images-6"></div>
         </div>
       </div>
