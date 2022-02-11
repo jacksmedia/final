@@ -99,7 +99,9 @@ const Navbar = () => {
         navbarOpen={navbarOpen}
         onClick={() => setNavbarOpen(!navbarOpen)}
       >
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+        {navbarOpen ? (<Hamburger open />) : 
+          (<Hamburger />)
+        }
       </Toggle>
       {navbarOpen ? (
         <Navtray>

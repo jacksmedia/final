@@ -3,12 +3,14 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import Navbar from './Navbar/Navbar'
+import Splasher from './Splasher'
 import Footblur from './Footblur'
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, open }) => {
   return (
     <div>
       <header>
+        <Splasher />
         <Navbar />
         <h1 className="section hero-size-text">Elrond Shibas</h1>
       </header>
