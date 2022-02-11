@@ -777,11 +777,11 @@ a:hover {
 }
 
 .roady.left {
-  left: 0;
+  right: 25%;
 }
 
 .roady.right {
-  left: 50%;
+  left: 25%;
 }
 
 .roady::after {
@@ -844,7 +844,7 @@ a:hover {
   height: 40px;
   padding: 9px 0;
   top: calc(50% - 20px);
-  background: #F6D155;
+  background: #1111;
   border: 2px solid snow;
   border-radius: 40px;
   text-align: center;
@@ -863,7 +863,7 @@ a:hover {
 
 .roady .content {
   padding: 30px 90px 30px 30px;
-  background: #F6D155;
+  background: #FE815B;
   position: relative;
   border-radius: 0 500px 500px 0;
 }
@@ -931,7 +931,6 @@ a:hover {
     border-radius: 500px 0 0 500px;
   }
 }
-
 
 @media only screen and (max-width: 480px) {
   html {

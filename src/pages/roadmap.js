@@ -7,7 +7,9 @@ import Seo from "../components/seo"
 const Roadmap = () => (
   <Layout>
     <Seo title="Roadmap to Shibaworld" />
-    <h1 className="">Roadmap</h1>
+    <div className="level center">
+      <h1>Roadmap</h1>
+    </div>
     <div className="section eshib-bg-13 level">
       <div class="timeline">
         <div class="roady right">
@@ -27,7 +29,7 @@ const Roadmap = () => (
             <p>New ShibaWorld adventure begins!</p>
           </div>
         </div>
-        <div class="roady left">
+        <div class="roady right">
           <div class="date">Q2</div>
           <i class="icon fa fa-user"></i>
           <div class="content">
@@ -74,34 +76,61 @@ const Roadmap = () => (
         </div>
       </div>
     </div>
-    <div className="spacer-zone level">
-      <h2 className="pl-3"> Anime Shibas (ANISHIB) and 3D Shibas (3DSHIB) NFT collections</h2>
-      <div className="container pt-3 is-fluid">
-      <StaticImage
-            className=""
-            layout="fixed"
-            formats={["AUTO", "GIF", "AVIF"]}
-            src="../images/uwu.gif"
-            width={185}
-            height={185}
-            quality={95}
-            alt="Elrond AniShibs loves you"
-          />
+    <div className="spacer-zone">
+      <h2 className="pl-3 pt-2"> Anime Shibas (ANISHIB) NFT collection</h2>
       <ul>
         <li>5000 Supply, each collections</li>
         <li>2,500 Buyable ONLY with $WAFL</li>
         <li>2,500 Buyable ONLY with $EGLD</li>
         <li>Future collections: same ½ EGLD - ½ WAFL approach</li>
       </ul>
+      <div className="level is-fluid is-flex-tablet">
+      <StaticImage
+            className=""
+            layout="constrained"
+            formats={["AUTO", "GIF", "AVIF"]}
+            src="../images/anishib1.png"
+            width={120}
+            height={120}
+            quality={95}
+            alt="Elrond AniShibs loves you"
+          />
+      <StaticImage
+            className=""
+            layout="constrained"
+            formats={["AUTO", "GIF", "AVIF"]}
+            src="../images/anishib2.png"
+            width={120}
+            height={120}
+            quality={95}
+            alt="Elrond AniShibs loves you"
+          />
+      <StaticImage
+            className=""
+            layout="constrained"
+            formats={["AUTO", "GIF", "AVIF"]}
+            src="../images/anishib4.png"
+            width={120}
+            height={120}
+            quality={95}
+            alt="Elrond AniShibs loves you"
+          />
+      </div>
+
+
     </div>
-    </div>
+
+
+
+
+
     <div className="level">
       <div className="container pt-3 pl-3 is-fluid">
         <h2>Historical Progress</h2>
         <p>December 2021 - First wave (0.25 EGLD)</p>
         <p>January 2022 - Second, Third, Fourth Waves (0.3 - 0.5 EGLD)</p>
-        <p>February 2022 - Fifth Wave Sells out in <strong>3 minutes</strong> (0.6 EGLD)</p>
-        <p>February 2022 - Wave 6 / 0.8 EGLD / 300 Shibas</p>
+        <p>February 2022 - Fifth Wave Sells out in <strong>3 minutes</strong> 300 @ 0.6 EGLD</p>
+        <p>February 2022 - Exclusive Wave 6 / 100 Shibas / 0.8 EGLD</p>
       </div>
       <div className="container pt-3 pl-3 is-fluid">
       <h2>Upcoming</h2>

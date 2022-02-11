@@ -11,7 +11,6 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className="section pt-2 pl-2 eshib-bg-2">
-      <h1 className="hero-size-text">Elrond Shibas</h1>
       <p>Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
 
       <div className="columns level">
@@ -190,7 +189,6 @@ const IndexPage = () => (
           <h2>ShibaWorld Awaits</h2>
           <p>AniShib and 3DShib collections dropping soon.</p>
           <p>These special collections will serve as keys to ShibaWorld! Each collection can be purchased with WAFL or EGLD!</p>
-          <h1 className="is-hidden-mobile">Coming Soon</h1>
           <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
         </div>
         <div className="column gray">
@@ -198,13 +196,14 @@ const IndexPage = () => (
             className=""
             layout="fixed"
             formats={["AUTO", "GIF", "AVIF"]}
-            src="../images/uwu.gif"
-            width={185}
-            height={185}
+            src="../images/anishib3.png"
+            width={200}
+            height={200}
             quality={95}
             alt="Elrond AniShibs loves you"
           />
           <p>AniShib from ShibaWorld</p>
+          <h1 className="is-hidden-mobile">Coming Soon</h1>
         </div>
       </div>
     </div>

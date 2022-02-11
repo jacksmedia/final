@@ -30,7 +30,7 @@ const NavbarLinks = () => {
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
+  font-size: 0.9rem;
   display: inline-block;
   white-space: nowrap;
   margin: 2vw 1vw;
@@ -59,7 +59,7 @@ const NavItem = styled(Link)`
 
   @media (max-width: 768px) {
     padding: 4px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     z-index: 6;
   }
 `
