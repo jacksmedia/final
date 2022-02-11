@@ -17,7 +17,7 @@ const Roadmap = () => (
           <i class="icon fa fa-home"></i>
           <div class="content">
             <h4 className="roady-title">SHIB-50039b Mint Completed</h4>
-            <p>All rewards and contents distro</p>
+            <p>All rewards and contests distributed</p>
             <p>All Shibas offchain, in circulation</p>
           </div>
         </div>
@@ -84,37 +84,10 @@ const Roadmap = () => (
         <li>2,500 Buyable ONLY with $EGLD</li>
         <li>Future collections: same ½ EGLD - ½ WAFL approach</li>
       </ul>
-      <div className="level is-fluid is-flex-tablet">
-      <StaticImage
-            className=""
-            layout="constrained"
-            formats={["AUTO", "GIF", "AVIF"]}
-            src="../images/anishib1.png"
-            width={120}
-            height={120}
-            quality={95}
-            alt="Elrond AniShibs loves you"
-          />
-      <StaticImage
-            className=""
-            layout="constrained"
-            formats={["AUTO", "GIF", "AVIF"]}
-            src="../images/anishib2.png"
-            width={120}
-            height={120}
-            quality={95}
-            alt="Elrond AniShibs loves you"
-          />
-      <StaticImage
-            className=""
-            layout="constrained"
-            formats={["AUTO", "GIF", "AVIF"]}
-            src="../images/anishib4.png"
-            width={120}
-            height={120}
-            quality={95}
-            alt="Elrond AniShibs loves you"
-          />
+      <div className="tile is-parent is-60vh">
+        <div className="tile is-child anishib-bg-1 ghost-fade"></div>
+        <div className="tile is-child anishib-bg-2 ghost-fade"></div>
+        <div className="tile is-child anishib-bg-3 ghost-fade"></div>
       </div>
 
 

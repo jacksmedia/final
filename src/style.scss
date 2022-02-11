@@ -468,7 +468,13 @@ h4, h5, h6 {
 .eshib-bg-11 {background: linear-gradient(#C98998,#4C151C);}
 .eshib-bg-13 {background: linear-gradient(#65A09D,#3C3232);}
 
-/* slides  */
+/* vertical slides  */
+.slideshow-splash {
+  position: relative;
+  overflow: hidden;
+  height: 101vh;
+  z-index: 3;
+}
 .slideshow2 {
   position: relative;
   overflow: hidden;
@@ -582,6 +588,26 @@ h4, h5, h6 {
   animation: slideshow 13s linear infinite;
 }
 
+.anishib-bg-1 {
+  height: 100%;
+  background: url(./images/anishib1.png);
+  background-size: cover;
+}
+.anishib-bg-2 {
+  height: 100%;
+  background: url(./images/anishib2.png);
+  background-size: cover;
+}
+.anishib-bg-3 {
+  height: 100%;
+  background: url(./images/anishib3.png);
+  background-size: cover;
+}
+.is-60vh {
+  min-height: 60vh;
+  height: 60vh;
+}
+
 @keyframes slideshow {
   0%    { left: 0; }
   100%  { left: -200%; }
@@ -626,6 +652,17 @@ p {
 }
 .yikes {
   animation: geez 6s ease 0.35s infinite alternate;
+}
+@keyframes fade-in-and-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 
+.ghost-fade {
+  animation: fade-in-and-out 5s ease 2s infinite alternate;
 }
 .button {
   margin: 1.5vw;
@@ -887,7 +924,9 @@ a:hover {
 .roady-title {
   color: lime;
 }
-
+.stay160h {
+  min-height: 160px;
+}
 @media only screen and (max-width: 480px) {
   .roady-title {
     color: red;
@@ -904,6 +943,6 @@ a:hover {
 }
 @media only screen and (max-width: 480px) {
   * {
-    font-size: 95%;
+    font-size: 98%;
   }
 }

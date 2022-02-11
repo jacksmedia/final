@@ -14,7 +14,7 @@ const IndexPage = () => (
       <p>Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
 
       <div className="columns level">
-        <div className="level-item column is-one-quarter-desktop"><a href="">
+        <div className="level-item column is-one-half-tablet is-one-quarter-desktop"><a href="">
           <StaticImage
             className=""
             layout="fixed"
@@ -27,7 +27,7 @@ const IndexPage = () => (
           />
           <p className="smoltext">Pixel art, smol boi pfps</p></a>
         </div>
-        <div className="level-item column is-one-quarter-desktop"><a href="#lkmex">
+        <div className="level-item column is-one-half-tablet is-one-quarter-desktop"><a href="#lkmex">
            <StaticImage
             className=""
             layout="fixed"
@@ -40,7 +40,7 @@ const IndexPage = () => (
           />
           <p className="smoltext">Earns #LKMEX on Saturdays!</p></a>
         </div>
-        <div className="level-item column is-one-quarter-desktop"><a href="#wafl">
+        <div className="level-item column is-one-half-tablet is-one-quarter-desktop"><a href="#wafl">
            <StaticImage
             className=""
             layout="fixed"
@@ -53,7 +53,7 @@ const IndexPage = () => (
           />
           <p className="smoltext">Earns $WAFL on Wednesdays!</p></a>
         </div>
-        <div className="level-item column is-one-quarter-desktop"><a href="#ShibaWorld">
+        <div className="level-item column is-one-half-tablet is-one-quarter-desktop"><a href="#ShibaWorld">
            <StaticImage
             className=""
             layout="fixed"
@@ -215,7 +215,7 @@ const IndexPage = () => (
           <h2 className="dark-forest-text">Ghosts need homes, too!</h2>
           <a href="/rarity" className="button">RARITY</a>
         </div>
-        <div className="slideshow2 column is-half">
+        <div className="slideshow2 column is-half ghost-fade">
           <div className="images-6"></div>
         </div>
       </div>

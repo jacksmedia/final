@@ -8,7 +8,7 @@ const Wrapper = styled.nav`
   align-items: center;
   margin: 0 auto;
   padding: 0 0vw;
-  z-index: 3;
+  z-index: 5;
   align-self: center;
 
   @media (max-width: 4096px) {
@@ -69,21 +69,18 @@ const Splasher = ( {open} ) => {
 
   return (
     <Wrapper>
-      <Toggle
-        splasherOpen={splasherOpen}
-        onClick={() => setSplasherOpen(!splasherOpen)}
-      >
-        {splasherOpen ? (<Sesame open />) : 
-          (<span/>)
-        }
-      </Toggle>
       {splasherOpen ? (
         <Splashscreen>
            <Toggle
               splasherOpen={splasherOpen}
               onClick={() => setSplasherOpen(!splasherOpen)}
             >
-              {splasherOpen ? (<Sesame open>Visit Shibaworld</Sesame>) : (<span/>)}
+              {splasherOpen ? (
+                <Sesame open>
+                  Visit Shibaworld
+                </Sesame>
+                ) : (<span/>)
+              }
             </Toggle>
         </Splashscreen>
       ) : (
