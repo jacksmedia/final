@@ -5,11 +5,9 @@ const Footblur = () => {
   const daowallet = "erd1x5xyd7wll5us3rlztzyfsc8sazph5dnrqen8v90pr34gfpr7s5vqdjv8d7"
   return(
     <div className="footsie">
-      <div className="floatybox">
         <p>Made with Love by Elrond Shibas Team</p>
         <p>Website by <a href="https://jacks.media">Jacks Media</a>
         {`, `}{new Date().getFullYear()}</p>
-      </div>
       <div className="bottommost-text">
         <div className="center-tightly">
         <StaticImage
@@ -22,7 +20,7 @@ const Footblur = () => {
           quality={95}
           alt="Egold symbol"
         />
-        <h6 className="engraved">CDO: {daowallet}</h6>
+        <h4 className="engraved">CDO: {daowallet}</h4>
         </div>
       </div>
     </div>
