@@ -31,6 +31,7 @@ const SEO = ({ description, lang, meta, title }) => {
   const defaultTitle = site.siteMetadata?.title
 
   return (
+    <>
     <Helmet
       htmlAttributes={{
         lang,
@@ -72,6 +73,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
       ].concat(meta)}
     />
+    </>
   )
 }
 

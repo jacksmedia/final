@@ -6,17 +6,17 @@ import Logowrap from "./Logowrap"
 const TopBar = styled.nav`
   min-height: 72px;
   height: 10vh;
-  display: flex;
-  background: linear-gradient(#A0C6CC, #FE815B);
   position: relative;
+  display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
   text-transform: uppercase;
+  background: linear-gradient(#A0C6CC, #FE815B);
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
-  align-self: center;
 
   @media (max-width: 768px) {
     position: sticky;
