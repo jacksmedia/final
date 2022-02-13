@@ -8,10 +8,11 @@ const NavbarLinks = () => {
   return (
     <div className="level">
       <div className="level-left">
-        <NavItem to="/roadmap" className="is-hoverable">Roadmap</NavItem>
+        <NavItem to="/wave7" className="is-hoverable">Wave 7</NavItem>
         <NavItem to="/whitepaper" className="is-hoverable">Whitepaper</NavItem>
         <NavItem to="/rarity" className="is-hoverable">Rarity</NavItem>
-        <NavItem to="/wave7" className="is-hoverable">Wave 7</NavItem>
+        <NavItem to="/roadmap" className="is-hoverable">Roadmap</NavItem>
+        <NavItem to="/lkmex" className="is-hoverable">LKMEX?</NavItem>
       </div>
       <hr className="is-hidden-tablet" />
       <div className="level-item">

@@ -7,21 +7,50 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 import Navbar from './Navbar/Navbar'
 import Footblur from './Footblur'
 
-const SplashyShibs = styled.div`
-  min-height: 100vh;
-  height: 100vh;
+const SplashyShibsLeft = styled.div`
+  animation-duration: 0.72s;
+  animation-name: splash-screen-move-left;
+  transition: all 1.3s ease-out;
+  transition: all 1.3s ease-in;
+  right: ${props => (props.open ? "-100%" : "0")};
+  min-height: 50vh;
+  height: 50vh;
+  width: 50%;
+  min-width: 50%;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: center;
-  background: linear-gradient(#A0C6CC, #FE815B);
+  background: blue;
+  margin: 0 auto;
+  padding: 0 2vw;
+  z-index: 9;
+`
+const SplashyShibsRight = styled.div`
+  animation-duration: 0.72s;
+  animation-name: splash-screen-move-right;
+  transition: all 1.3s ease-out;
+  transition: all 1.3s ease-in;
+  left: ${props => (props.open ? "-100%" : "0")};
+  min-height: 50vh;
+  width: 50%;
+  min-width: 50%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: red;
   margin: 0 auto;
   padding: 0 2vw;
   z-index: 9;
 `
 
 const Layout = ({ location, title, children }) => {
+  const [ isActive, setActive ] = useState("false")
+  const handleToggle = () => {
+    setActive(!isActive)
+  }
   const [ cookies, setCookie ] = useCookies(["visitor"])
   function handleCookie() {
     setCookie("visitor", "I AM HERE BORKBORKBORK", {
@@ -29,6 +58,7 @@ const Layout = ({ location, title, children }) => {
     })
     console.log("Cookie eaten! 🥠")
     console.log(cookies.visitor)
+    handleToggle()
   }
   function resetCookie() {
     setCookie("visitor", "", {
@@ -36,17 +66,22 @@ const Layout = ({ location, title, children }) => {
     })
     console.log("Cookies reset!")
     console.log(cookies.visitor)
+    handleToggle()
   }
   return (
     <div>
+      <button className="special-btn float-above-it-all" onClick={resetCookie}>Show Me Shiba Splash ser</button>
+      { !cookies.visitor && 
+        <div className="splash-frame">
+          <SplashyShibsLeft>
+            <button className="special-btn" open onClick={handleCookie}>Open</button>
+          </SplashyShibsLeft>
+          <SplashyShibsRight>
+            <button className="special-btn" open onClick={handleCookie}>WAFL</button>
+          </SplashyShibsRight>
+        </div>
+      }
       <header>
-          <button className="special-btn" onClick={resetCookie}>Show Me Shiba Splash ser</button>
-          { !cookies.visitor && 
-            <SplashyShibs>
-              NavBar goes away
-              <button className="special-btn" onClick={handleCookie}>Open WAFL</button>
-            </SplashyShibs> 
-          }
         <Navbar />
         <h1 className="section hero-size-text">Elrond Shibas</h1>
       </header>

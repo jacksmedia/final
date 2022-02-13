@@ -2,18 +2,19 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const WaflToken = () => {
+const BigLkmex = () => {
 	return(
 		<StaticImage
+			className=""
 			layout="fixed"
 			formats={["AUTO", "WEBP", "AVIF"]}
-			src="../images/wafl.png"
-			height={40}
-			width={40}
+			src="../images/lkmex.png"
+			width={195}
+			height={195}
 			quality={95}
-			alt="Elrond Shibas love you!"
+			alt="Elrond Shibas farm Waffles!"
 		/>
 	)
 	}
 
-	export default WaflToken
+	export default BigLkmex

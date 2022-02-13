@@ -376,6 +376,14 @@ h1, h2 {
   width: 100px;
 }
 
+@keyframes splash-screen-move-left {
+  from { left: 50%; }
+  to { left: -100%; }
+}
+@keyframes splash-screen-move-right {
+  from { right: 50%; }
+  to { right: -100%; }
+}
 
 * {
   font-family: "PixelUnicode";
@@ -925,17 +933,25 @@ a:hover {
 .special-btn {
   background-color: #dd3000;
 }
-
+.float-above-it-all {
+  position: relative;
+  z-index: 99;
+}
+.splash-frame {
+  width: 100vw;
+  min-width: 100vw;
+}
 .stay160h {
   min-height: 160px;
 }
+
 @media only screen and (max-width: 480px) {
   .roady-title {
     color: red;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 2559px) {
   th {
     font-size: 65%;
   }

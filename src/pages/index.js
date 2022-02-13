@@ -3,8 +3,10 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { CookiesProvider, withCookies } from 'react-cookie'
 import Layout from '../components/layout'
+import LkmexToken from '../components/LkmexToken'
 import WaflToken from '../components/WaflToken'
 import BigWafl from '../components/BigWafl'
+import BigLkmex from '../components/BigLkmex'
 import Seo from '../components/seo'
 
 const IndexPage = () => (
@@ -115,6 +117,10 @@ const IndexPage = () => (
           <div className="images01"></div>
         </div>
         <h1 className="dark-forest-text">LKMEX and WAFL</h1>
+        <div className="level is-mobile is-space-around">
+          <BigLkmex className="level-item" />
+          <BigWafl className="level-item" />
+        </div>
       </div>
   
   
@@ -124,16 +130,9 @@ const IndexPage = () => (
             <h2 className="whyt">Elrond Shibas pay you LKMEX</h2>
             <p>Stake your LKMEX on Maiar Exchange or spend it on NFTs!</p>
             <a href="https://deadrare.io/collection/SHIB-50039b" className="button">BUY NOW</a>
-            <StaticImage
-              className=""
-              layout="fixed"
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/lkmex.png"
-              width={170}
-              height={170}
-              quality={95}
-              alt="Elrond Shibas love you!"
-            />
+            <div className="level">
+            <LkmexToken /><LkmexToken /><LkmexToken />
+            </div>
             <p className="smoltext">LKMEX compounds well!</p></div>
             <div className="column">
               <div className="slideshow2 is-hidden-mobile">
