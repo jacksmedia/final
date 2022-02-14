@@ -196,7 +196,7 @@ ul, ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 30vh;
+  min-height: 25vh;
   padding: 4rem;
   background: radial-gradient(#FE815B, #A0C6CC);
 }
@@ -351,7 +351,7 @@ h1, h2 {
 }
 .act-zone {
   min-height: 800px;
-  height: 110vh;
+  height: 90vh;
   background-color: #6666;
 }
 .spacer-zone {
@@ -360,7 +360,18 @@ h1, h2 {
   background: linear-gradient(#5553,#5556,#555f,#5556,#5553);
   background-attachment: scroll;
 }
-
+.all-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.slim-down-section {
+  margin: 0 0 0 0;
+  padding: 2px 3px 2px 3px;
+  min-height: 33vh;
+  height: 33vh;
+  max-height: 33vh;
+  display: flex;
+}
 .eshib-bg-wafl {
   background: url("./images/wafl-bg.png");
   background-repeat: repeat;
@@ -486,7 +497,9 @@ h4, h5, h6 {
 .slideshow2 {
   position: relative;
   overflow: hidden;
-  height: 68vh;
+  height: 63vh;
+  max-height: 63vh;
+  min-height: 63vh;
 }
 .images-1 {
   transform: translate3d(0, 0, 0);
@@ -547,6 +560,10 @@ h4, h5, h6 {
   height: 300%;
   width: 206px;
   animation: slideshow2 73s linear infinite;
+}
+/* to place slides on SplashFrame in NavBar */
+.splashed {
+  
 }
 
 /* horiz slides */
@@ -642,7 +659,23 @@ h4, h5, h6 {
 .gray {
   background-color: #3338;
 }
-
+.splash-btn-frame {
+  z-index: 1002;
+}
+.splash-btn {
+  margin: 0 0 0 0;
+  background: #DD3000;
+  min-width: 50vw;
+  height: 70px;
+  z-index: 3003;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 p {
   padding-left: 1.2rem;
 }
@@ -940,14 +973,14 @@ a:hover {
   left: 35vw;
   opacity: 0.4;
 }
-.splash-frame {
-  width: 100vw;
-  min-width: 100vw;
-}
+
 .stay160h {
   min-height: 160px;
 }
-
+.clearpiece {
+  background: #0000;
+  border: 0 black;
+}
 .float-above-it-all {
   position: fixed;
   left: 20px;

@@ -3,9 +3,9 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { CookiesProvider, withCookies } from 'react-cookie'
 import Layout from '../components/layout'
-import LkmexToken from '../components/LkmexToken'
 import WaflToken from '../components/WaflToken'
 import BigWafl from '../components/BigWafl'
+import LkmexToken from '../components/LkmexToken'
 import BigLkmex from '../components/BigLkmex'
 import Seo from '../components/seo'
 
@@ -16,8 +16,8 @@ const IndexPage = () => (
       <div className="section pt-2 pl-2 eshib-bg-2">
         <p>Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
   
-        <div className="columns">
-          <div className="column is-one-quarter-desktop"><a href="">
+        <div className="">
+          <div className="section slim-down-section"><a href="">
             <StaticImage
               className=""
               layout="fixed"
@@ -28,9 +28,9 @@ const IndexPage = () => (
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <p className="smoltext">Pixel art, smol boi pfps</p></a>
+            <h2 className="smoltext">Pixel art pfp of Shibs w/o gas fees</h2></a>
           </div>
-          <div className="column is-one-quarter-desktop"><a href="#lkmex">
+          <div className="section slim-down-section gray all-right"><a href="#lkmex">
              <StaticImage
               className=""
               layout="fixed"
@@ -41,9 +41,9 @@ const IndexPage = () => (
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <p className="smoltext">Earns #LKMEX on Saturdays!</p></a>
+            <h2 className="smoltext">Earns #LKMEX on Saturdays!</h2></a>
           </div>
-          <div className="column is-one-quarter-desktop"><a href="#wafl">
+          <div className="section slim-down-section"><a href="#wafl">
              <StaticImage
               className=""
               layout="fixed"
@@ -54,9 +54,9 @@ const IndexPage = () => (
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <p className="smoltext">Earns $WAFL on Wednesdays!</p></a>
+            <h2 className="smoltext">Earns $WAFL on Wednesdays!</h2></a>
           </div>
-          <div className="column is-one-quarter-desktop"><a href="#ShibaWorld">
+          <div className="section slim-down-section gray all-right"><a href="#ShibaWorld">
              <StaticImage
               className=""
               layout="fixed"
@@ -67,7 +67,7 @@ const IndexPage = () => (
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <p className="smoltext">Your ticket to SHIBAWORLD & SFTs</p></a>
+            <h2 className="smoltext">Your ticket to SHIBAWORLD and free SFTs</h2></a>
           </div>
         </div>
   
@@ -95,8 +95,8 @@ const IndexPage = () => (
         </div>
       </div>
   
-      <div className="section spacer-zone eshib-bg-3">
-         <div className="columns">
+      <div className="section spacer-zone">
+         <div className="columns eshib-bg-3">
           <div className="column gray">
             <h2 className="whyt">Waves of Shiba are Arriving</h2>
             <p>Sailing in from ShibaWorld, these cute frens pay you for owning them!</p>
@@ -118,8 +118,11 @@ const IndexPage = () => (
         </div>
         <h1 className="dark-forest-text">LKMEX and WAFL</h1>
         <div className="level is-mobile is-space-around">
-          <BigLkmex className="level-item" />
-          <BigWafl className="level-item" />
+          <WaflToken className="level-item" />
+          <LkmexToken className="level-item" />
+          <WaflToken className="level-item" />
+          <LkmexToken className="level-item" />
+          <WaflToken className="level-item" />
         </div>
       </div>
   
@@ -129,14 +132,14 @@ const IndexPage = () => (
           <div className="column ">
             <h2 className="whyt">Elrond Shibas pay you LKMEX</h2>
             <p>Stake your LKMEX on Maiar Exchange or spend it on NFTs!</p>
-            <a href="https://deadrare.io/collection/SHIB-50039b" className="button">BUY NOW</a>
-            <div className="level">
-            <LkmexToken /><LkmexToken /><LkmexToken />
+            <Link to="/lkmex" className="button center">LKMEX?</Link>
+            <div className="level is-mobile">
+              <LkmexToken /><LkmexToken /><LkmexToken />
             </div>
             <p className="smoltext">LKMEX compounds well!</p></div>
             <div className="column">
               <div className="slideshow2 is-hidden-mobile">
-                <div className="images-2"></div>
+                <div className="column images-2"></div>
               </div>
             </div>
           </div>
@@ -149,7 +152,7 @@ const IndexPage = () => (
       </div>
   
   
-      <div className="section spacer-zone">
+      <div className="section spacer-zone gray">
        <div className="level columns is-mobile">
           <div className="column"><WaflToken /></div>
           <div className="column"><WaflToken /></div>
@@ -157,21 +160,17 @@ const IndexPage = () => (
           <div className="column"><WaflToken /></div>
           <div className="column"><WaflToken /></div>
         </div>
-         <div className="columns" id="wafl">
-          <div className="column gray">
+         <div className="" id="wafl">
+          <div className="">
             <h2>WAFL tokens</h2>
-            <h2>Shiba love WAFL</h2>
             <p>Every day each Shiba earns you a $WAFL token! Packs of Shibs will earn you free SFTs like Shiba Gardens and Shiba Farms!</p>
             <a href="https://trust.market/collection/SHIB-50039b" className="button">BUY NOW</a>
-          </div>
-          <div className="column gray is-hidden-mobile"><BigWafl /></div>
-        </div>
-        <div className="level columns is-hidden-mobile">
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
+              <div className="level is-mobile">
+                <WaflToken className="level-item" />
+                <BigWafl className="level-item is-hidden-mobile" />
+                <WaflToken className="level-item" />
+              </div>
+            </div>
         </div>
       </div>
       <div className="section spacer-zone eshib-bg-wafl">
@@ -209,13 +208,13 @@ const IndexPage = () => (
       </div>
       <div className="section spacer-zone eshib-bg-5">
         <div className="columns">
-          <div className="column">
+          <div className="column is-7">
             <h1 className="dark-forest-text">Ghostly Shibs also exist</h1>
-            <h2 className="dark-forest-text">They all pay LKMEX and WAFL</h2>
-            <h2 className="dark-forest-text">Ghosts need homes, too!</h2>
+            <p className="whyt">They all pay LKMEX and WAFL</p>
+            <p className="whyt">Ghosts need homes, too!</p>
             <a href="/rarity" className="button">RARITY</a>
           </div>
-          <div className="slideshow2 column is-half ghost-fade">
+          <div className="slideshow2 column is-5 ghost-fade">
             <div className="images-6"></div>
           </div>
         </div>
