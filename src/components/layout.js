@@ -8,39 +8,33 @@ import Navbar from './Navbar/Navbar'
 import Footblur from './Footblur'
 
 const SplashyShibsLeft = styled.div`
-  animation-duration: 0.72s;
-  animation-name: splash-screen-move-left;
-  transition: all 1.3s ease-out;
-  transition: all 1.3s ease-in;
-  right: ${props => (props.open ? "-100%" : "0")};
-  min-height: 50vh;
-  height: 50vh;
+  transition: all 0.3s ease-out;
+  left: ${props => (props.open ? "-50%" : "0")};
+  min-height: 100vh;
+  height: 100vh;
   width: 50%;
   min-width: 50%;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: blue;
+  background: linear-gradient(#0172bd, black);
   margin: 0 auto;
   padding: 0 2vw;
   z-index: 9;
 `
 const SplashyShibsRight = styled.div`
-  animation-duration: 0.72s;
-  animation-name: splash-screen-move-right;
-  transition: all 1.3s ease-out;
-  transition: all 1.3s ease-in;
-  left: ${props => (props.open ? "-100%" : "0")};
-  min-height: 50vh;
+  transition: all 0.3s ease-out;
+  right: ${props => (props.open ? "-50%" : "0")};
+  min-height: 100vh;
+  height: 100vh;
   width: 50%;
   min-width: 50%;
-  height: 50vh;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: red;
+  background: linear-gradient(#0172bd, black);
   margin: 0 auto;
   padding: 0 2vw;
   z-index: 9;
@@ -51,36 +45,32 @@ const Layout = ({ location, title, children }) => {
   const handleToggle = () => {
     setActive(!isActive)
   }
-  const [ cookies, setCookie ] = useCookies(["visitor"])
-  function handleCookie() {
-    setCookie("visitor", "I AM HERE BORKBORKBORK", {
-      path: "/"
-    })
-    console.log("Cookie eaten! 🥠")
-    console.log(cookies.visitor)
-    handleToggle()
-  }
-  function resetCookie() {
-    setCookie("visitor", "", {
-      path: "/"
-    })
-    console.log("Cookies reset!")
-    console.log(cookies.visitor)
-    handleToggle()
-  }
+  
   return (
     <div>
-      <button className="special-btn float-above-it-all" onClick={resetCookie}>Show Me Shiba Splash ser</button>
-      { !cookies.visitor && 
+      <button className="ml-5 special-btn float-above-it-all" onClick={handleToggle}>Show Me Shiba Splash ser</button>
         <div className="splash-frame">
+        { isActive ? (
+          <>
+          <SplashyShibsLeft open>
+            <button className="special-btn" open onClick={handleToggle}>Open</button>
+          </SplashyShibsLeft>
+          <SplashyShibsRight open>
+            <button className="special-btn" open onClick={handleToggle}>WAFL</button>
+          </SplashyShibsRight>
+          </>          
+          ) : (
+          <>
           <SplashyShibsLeft>
-            <button className="special-btn" open onClick={handleCookie}>Open</button>
+            <button className="special-btn" open onClick={handleToggle}>Open</button>
           </SplashyShibsLeft>
           <SplashyShibsRight>
-            <button className="special-btn" open onClick={handleCookie}>WAFL</button>
+            <button className="special-btn" open onClick={handleToggle}>WAFL</button>
           </SplashyShibsRight>
+          </>
+          )
+        }
         </div>
-      }
       <header>
         <Navbar />
         <h1 className="section hero-size-text">Elrond Shibas</h1>

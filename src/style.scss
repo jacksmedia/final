@@ -934,8 +934,11 @@ a:hover {
   background-color: #dd3000;
 }
 .float-above-it-all {
-  position: relative;
+  position: absolute;
   z-index: 99;
+  top: 20px;
+  left: 35vw;
+  opacity: 0.4;
 }
 .splash-frame {
   width: 100vw;
@@ -945,6 +948,12 @@ a:hover {
   min-height: 160px;
 }
 
+.float-above-it-all {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 100;
+}
 @media only screen and (max-width: 480px) {
   .roady-title {
     color: red;
