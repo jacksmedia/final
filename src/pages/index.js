@@ -17,20 +17,22 @@ const IndexPage = () => (
         <p>Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
   
         <div className="">
-          <div className="section slim-down-section"><a href="">
+          <div className="section p-3 slim-down-section eshib-bg-6"><a href="">
             <StaticImage
               className=""
               layout="fixed"
               formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/es164.png"
+              src="../images/samuraishib.png"
               width={170}
               height={170}
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <h2 className="smoltext">Pixel art pfp of Shibs w/o gas fees</h2></a>
+            <h2 className="smoltext">Elrond's Shiba NFTs</h2>
+            <p className="smoltext">Legendary Shibs make their home on Elrond! Join our community and adopt today!</p>
+            </a>
           </div>
-          <div className="section slim-down-section gray all-right"><a href="#lkmex">
+          <div className="section p-3 slim-down-section gray all-right"><a href="#lkmex">
              <StaticImage
               className=""
               layout="fixed"
@@ -41,9 +43,11 @@ const IndexPage = () => (
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <h2 className="smoltext">Earns #LKMEX on Saturdays!</h2></a>
+            <h2 className="smoltext">Shibas earn you #LKMEX on Saturdays!</h2>
+            <p className="smoltext">The Elrond Shiba CDO wallet pays out LKMEX per doge weekly! More every week, thanks to Elrond DeFi tools!</p>
+            </a>
           </div>
-          <div className="section slim-down-section"><a href="#wafl">
+          <div className="section p-3 slim-down-section eshib-bg-6"><a href="#wafl">
              <StaticImage
               className=""
               layout="fixed"
@@ -54,20 +58,23 @@ const IndexPage = () => (
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <h2 className="smoltext">Earns $WAFL on Wednesdays!</h2></a>
+            <h2 className="smoltext">Shibas earn you $WAFL every Wednesday!</h2>
+            <p className="smoltext">Custom WAFL tokens will allow collabs with other projects & let you mint future ShibaWorld NFT collections!</p>
+            </a>
           </div>
-          <div className="section slim-down-section gray all-right"><a href="#ShibaWorld">
+          <div className="section p-3 slim-down-section gray all-right"><a href="#ShibaWorld">
              <StaticImage
               className=""
               layout="fixed"
               formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/es884.png"
+              src="../images/anishib1.png"
               width={170}
               height={170}
               quality={95}
               alt="Elrond Shibas love you!"
             />
-            <h2 className="smoltext">Your ticket to SHIBAWORLD and free SFTs</h2></a>
+            <h2 className="smoltext">Your ticket to SHIBAWORLD and free SFTs</h2>
+            <p className="smoltext">AniShib and 3D Shib collections are in the works! ShibaWorld will gift your SFTs every 28 days!</p></a>
           </div>
         </div>
   
