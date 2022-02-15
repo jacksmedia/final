@@ -364,6 +364,29 @@ h1, h2 {
   display: flex;
   justify-content: flex-end;
 }
+/* landing page layout */
+.top-quad {
+  width: 100%; 
+  display: grid;
+  grid-auto-rows: auto; 
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-gap: 1em;
+}
+.quad-piece {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.quad-piece:nth-child(odd) {
+  background-color: #000f;
+}
+
+.quad-piece:nth-child(even) {
+  background-color: #0006;
+}
+
+
 .slim-down-section {
   margin: 0 0 0 0;
   padding: 2px 3px 2px 3px;

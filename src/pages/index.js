@@ -13,11 +13,11 @@ const IndexPage = () => (
   <CookiesProvider>
     <Layout>
       <Seo title="Home" />
-      <div className="section pt-2 pl-2 eshib-bg-2">
+      <div className="section eshib-bg-2">
         <p>Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
   
-        <div className="">
-          <div className="section p-3 slim-down-section eshib-bg-6"><a href="">
+        <div className="top-quad">
+          <div className="quad-piece"><a href="https://discord.gg/ark67RKkrV">
             <StaticImage
               className=""
               layout="fixed"
@@ -32,7 +32,7 @@ const IndexPage = () => (
             <p className="smoltext">Legendary Shibs make their home on Elrond! Join our community and adopt today!</p>
             </a>
           </div>
-          <div className="section p-3 slim-down-section gray all-right"><a href="#lkmex">
+          <div className="quad-piece"><a href="#lkmex">
              <StaticImage
               className=""
               layout="fixed"
@@ -47,7 +47,7 @@ const IndexPage = () => (
             <p className="smoltext">The Elrond Shiba CDO wallet pays out LKMEX per doge weekly! More every week, thanks to Elrond DeFi tools!</p>
             </a>
           </div>
-          <div className="section p-3 slim-down-section eshib-bg-6"><a href="#wafl">
+          <div className="quad-piece"><a href="#wafl">
              <StaticImage
               className=""
               layout="fixed"
@@ -62,7 +62,7 @@ const IndexPage = () => (
             <p className="smoltext">Custom WAFL tokens will allow collabs with other projects & let you mint future ShibaWorld NFT collections!</p>
             </a>
           </div>
-          <div className="section p-3 slim-down-section gray all-right"><a href="#ShibaWorld">
+          <div className="quad-piece"><a href="#ShibaWorld">
              <StaticImage
               className=""
               layout="fixed"
@@ -76,8 +76,9 @@ const IndexPage = () => (
             <h2 className="smoltext">Your ticket to SHIBAWORLD and free SFTs</h2>
             <p className="smoltext">AniShib and 3D Shib collections are in the works! ShibaWorld will gift your SFTs every 28 days!</p></a>
           </div>
+
         </div>
-  
+ 
       </div>
   
       <div className="section spacer-zone eshib-bg-6">
