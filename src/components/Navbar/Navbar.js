@@ -134,7 +134,7 @@ const Hamburger = styled.div`
   }
 `
 const Navbar = () => {
-  const [ isSplash, setSplash ] = useState("true")
+  const [ isSplash, setSplash ] = useState(true)
   const handleToggle = () => {
     setSplash(!isSplash)
   }

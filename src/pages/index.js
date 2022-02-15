@@ -103,8 +103,8 @@ const IndexPage = () => (
       </div>
   
       <div className="section spacer-zone">
-         <div className="columns eshib-bg-3">
-          <div className="column gray">
+         <div className="columns">
+          <div className="column gray act-zone eshib-bg-3">
             <h2 className="whyt">Waves of Shiba are Arriving</h2>
             <p>Sailing in from ShibaWorld, these cute frens pay you for owning them!</p>
             <p>Adopt one from a trusted marketplace today!!</p>
@@ -192,9 +192,9 @@ const IndexPage = () => (
       <div className="section spacer-zone">
          <div className="columns" id="ShibaWorld">
           <div className="column gray">
-            <h2>ShibaWorld Awaits</h2>
-            <p>AniShib and 3DShib collections dropping soon.</p>
-            <p>These special collections will serve as keys to ShibaWorld! Each collection can be purchased with WAFL or EGLD!</p>
+            <h2 className="">ShibaWorld Awaits</h2>
+            <p className=" smoltext">AniShib and 3DShib collections dropping soon.</p>
+            <p className=" smoltext">These special collections will serve as keys to ShibaWorld! Each collection can be purchased with WAFL or EGLD!</p>
             <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
           </div>
           <div className="column gray">
@@ -217,7 +217,7 @@ const IndexPage = () => (
         <div className="columns">
           <div className="column is-7">
             <h1 className="dark-forest-text">Ghostly Shibs also exist</h1>
-            <p className="whyt">They all pay LKMEX and WAFL</p>
+            <p className="whyt">They all pay LKMEX and WAFL...</p>
             <p className="whyt">Ghosts need homes, too!</p>
             <a href="/rarity" className="button">RARITY</a>
           </div>
