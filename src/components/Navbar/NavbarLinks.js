@@ -1,15 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from 'react'
+import styled from 'styled-components'
+import scrollTo from 'gatsby-plugin-smoothscroll'
+import { Link } from 'gatsby'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 const NavbarLinks = () => {
   return (
     <div className="level">
       <div className="level-left">
-        <NavItem to="/whitepaper" className="is-hoverable">Whitepaper</NavItem>
-        <NavItem to="/faq" className="is-hoverable">FAQ</NavItem>
+        <ScrollTo onClick={() => scrollTo('#faq')} className="is-hoverable">FAQ</ScrollTo>
+        <ScrollTo onClick={() => scrollTo('#whitepaper')} className="is-hoverable">Whitepaper</ScrollTo>
         <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
       </div>
       <hr className="is-hidden-tablet" />
@@ -26,6 +27,44 @@ const NavbarLinks = () => {
     </div>
   )
 }
+
+const ScrollTo = styled.button`
+  background: #0000;
+  border: black 0 solid;
+  text-decoration: none;
+  font-size: 1.15rem;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 2vw 1vw;
+  transition: all 200ms ease-in;
+  position: relative;
+
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: tomato;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+
+  :hover {
+    color: blue;
+    ::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 4px 0;
+    font-size: 1.2rem;
+    z-index: 6;
+  }
+`
 
 const NavItem = styled(Link)`
   text-decoration: none;

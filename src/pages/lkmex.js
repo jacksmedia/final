@@ -13,8 +13,8 @@ const Rarity = () => (
       <h1>ElrondShibas Love LKMEX</h1>
       <h3 className="yikes">Look forward to ShibaSaturdays</h3>
       <p>The SHIB-50039b NTFs currently yield <span className="yikes">9496.84615 LKMEX</span> per week!</p>
-      <p>Not finding your LKMEX gift, fren? Follow this guide to locate your ESDT tokens and enjoy your Maiar lifestyle!</p>
-      <div className="level is-mobile">
+      <p>Not finding your LKMEX gift, fren? Follow this guide to locate your Locked Maiar Exchange tokens and enjoy your passive income lifestyle!</p>
+      <div className="mt-3 level is-mobile">
         <LkmexToken /><LkmexToken /><LkmexToken /><LkmexToken /><LkmexToken />
       </div>
       <h2>Step #1</h2>

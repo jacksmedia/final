@@ -28,6 +28,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-source-filesystem`,

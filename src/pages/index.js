@@ -121,7 +121,7 @@ const IndexPage = () => (
   
   
       <div className="section spacer-zone eshib-bg-7">
-         <div className="columns gray" id="lkmex">
+         <div className="columns gray" id="faq">
           <div className="column ">
             <h2 className="whyt">Elrond Shibas pay you LKMEX</h2>
             <p>Stake your LKMEX on Maiar Exchange or spend it on NFTs!</p>
@@ -168,7 +168,7 @@ const IndexPage = () => (
       </div>
       <div className="section spacer-zone eshib-bg-wafl">
         <h1 className="syrup-text">Read more about WAFL and the SFTs in the Whitepaper!</h1>
-        <a href="/whitepaper" className="button">Whitepaper</a>
+        
         <div className="slideshow level is-mobile">
           <div className="images01"></div>
         </div>
@@ -176,7 +176,7 @@ const IndexPage = () => (
   
   
       <div className="section spacer-zone">
-         <div className="columns" id="ShibaWorld">
+         <div className="columns" id="whitepaper">
           <div className="column gray">
             <h2 className="">ShibaWorld Awaits</h2>
             <p className=" smoltext">AniShib and 3DShib collections dropping soon.</p>
