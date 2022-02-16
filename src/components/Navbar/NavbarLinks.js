@@ -8,11 +8,9 @@ const NavbarLinks = () => {
   return (
     <div className="level">
       <div className="level-left">
-        <NavItem to="/wave7" className="is-hoverable">Wave 7</NavItem>
         <NavItem to="/whitepaper" className="is-hoverable">Whitepaper</NavItem>
-        <NavItem to="/rarity" className="is-hoverable">Rarity</NavItem>
-        <NavItem to="/roadmap" className="is-hoverable">Roadmap</NavItem>
-        <NavItem to="/lkmex" className="is-hoverable">LKMEX?</NavItem>
+        <NavItem to="/faq" className="is-hoverable">FAQ</NavItem>
+        <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
       </div>
       <hr className="is-hidden-tablet" />
       <div className="level-item">
@@ -64,5 +62,6 @@ const NavItem = styled(Link)`
     z-index: 6;
   }
 `
+
 
 export default NavbarLinks

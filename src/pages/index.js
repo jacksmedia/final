@@ -1,87 +1,72 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import styled from 'styled-components'
 import { CookiesProvider, withCookies } from 'react-cookie'
 import Layout from '../components/layout'
 import WaflToken from '../components/WaflToken'
 import BigWafl from '../components/BigWafl'
 import LkmexToken from '../components/LkmexToken'
-import BigLkmex from '../components/BigLkmex'
+import IO from '../components/io'
 import Seo from '../components/seo'
+
+
+const FilmZone = styled.div`
+  -webkit-text-size-adjust: 100%;
+  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 90vh;
+  margin-bottom: 0;
+  padding-bottom: 186px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-top: 80px;
+  transition: background-color 8.5s ease;
+  background-color: ${({ isVisible }) => (isVisible ? 'snow' : ' navy')};
+`
+const FilmStrip = styled.div`
+  background: url(./images/slide1.png);
+  height: 300px;
+  width: 1200px;
+  transform: translate3d(-0.8592%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-8deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transition: left 20s linear;
+  left: ${({ isVisible }) => (isVisible ? '-100%' : '100%')};
+`
 
 const IndexPage = () => (
   <CookiesProvider>
     <Layout>
       <Seo title="Home" />
       <div className="section eshib-bg-2">
-        <p>Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
-  
-        <div className="top-quad">
-          <div className="quad-piece"><a href="https://discord.gg/ark67RKkrV">
-            <StaticImage
-              className=""
-              layout="fixed"
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/samuraishib.png"
-              width={170}
-              height={170}
-              quality={95}
-              alt="Elrond Shibas love you!"
-            />
-            <h2 className="smoltext">Elrond's Shiba NFTs</h2>
-            <p className="smoltext">Legendary Shibs make their home on Elrond! Join our community and adopt today!</p>
-            </a>
-          </div>
-          <div className="quad-piece"><a href="#lkmex">
-             <StaticImage
-              className=""
-              layout="fixed"
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/es511.png"
-              width={170}
-              height={170}
-              quality={95}
-              alt="Elrond Shibas love you!"
-            />
-            <h2 className="smoltext">Shibas earn you #LKMEX on Saturdays!</h2>
-            <p className="smoltext">The Elrond Shiba CDO wallet pays out LKMEX per doge weekly! More every week, thanks to Elrond DeFi tools!</p>
-            </a>
-          </div>
-          <div className="quad-piece"><a href="#wafl">
-             <StaticImage
-              className=""
-              layout="fixed"
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/es720.png"
-              width={170}
-              height={170}
-              quality={95}
-              alt="Elrond Shibas love you!"
-            />
-            <h2 className="smoltext">Shibas earn you $WAFL every Wednesday!</h2>
-            <p className="smoltext">Custom WAFL tokens will allow collabs with other projects & let you mint future ShibaWorld NFT collections!</p>
-            </a>
-          </div>
-          <div className="quad-piece"><a href="#ShibaWorld">
-             <StaticImage
-              className=""
-              layout="fixed"
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/anishib1.png"
-              width={170}
-              height={170}
-              quality={95}
-              alt="Elrond Shibas love you!"
-            />
-            <h2 className="smoltext">Your ticket to SHIBAWORLD and free SFTs</h2>
-            <p className="smoltext">AniShib and 3D Shib collections are in the works! ShibaWorld will gift your SFTs every 28 days!</p></a>
-          </div>
-
-        </div>
- 
+       
+       
+      <IO rootMargin = '-1px'>
+        {({isVisible})=>(
+        <FilmZone isVisible={isVisible}>
+          <FilmStrip isVisible={isVisible}>
+            <div className="images91">
+            </div>
+          </FilmStrip>
+        </FilmZone>
+      )}</IO>
       </div>
-  
+      
+
       <div className="section spacer-zone eshib-bg-6">
+
          <div className="columns">
           <div className="column gray">
             <h2>Shiba NFTs with their Own Metaverse</h2>

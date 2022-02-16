@@ -26,13 +26,33 @@ $black: #242;
 
 /* font pairing  */
 @font-face {
-  font-family: '04B30';
-  src: local('04B30.ttf'), url(./fonts/04B30.ttf) format('truetype');
+  font-family: 'NeueMachina-Regular';
+  src: local('NeueMachina-Regular.ttf'), url(./fonts/NeueMachina-Regular.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'PixelUnicode';
-  src: local('pixel-unicode-webfont.woff'), url(./fonts/pixel-unicode-webfont.woff) format('truetype');
+  font-family: 'NeueMachina-Ultralight';
+  src: local('NeueMachina-Ultralight.ttf'), url(./fonts/NeueMachina-Ultralight.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: local('NeueMachina-Ultrabold.ttf'), url(./fonts/NeueMachina-Ultrabold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NeueMachina-Medium';
+  src: local('NeueMachina-Medium.ttf'), url(./fonts/NeueMachina-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NeueMachina-Ultrabold';
+  src: local('NeueMachina-Ultrabold.ttf'), url(./fonts/NeueMachina-Ultrabold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'NeueMachina-Regular';
+  src: local('NeueMachina-Regular.ttf'), url(./fonts/NeueMachina-Regular.ttf) format('truetype');
+}
+
+
+
+
 
 /* typical Gatsby layout  */
 *,
@@ -49,10 +69,10 @@ html {
 }
 
 body {
-  font-family: "PixelUnicode", sans-serif;
+  font-family: 'NeueMachina-Ultralight';
   font-size: var(--fontSize-1);
   color: $black;
-  background: linear-gradient(0deg, #0eacac 0%, #0065A8 50%, #000000 100%);
+  background: linear-gradient(0deg, #161717 0%, #000000 100%);
 }
 
 hr {
@@ -198,7 +218,7 @@ ul, ol {
   align-items: center;
   min-height: 25vh;
   padding: 4rem;
-  background: radial-gradient(#FE815B, #A0C6CC);
+  background: radial-gradient(#000000, #161717);
 }
 
 .bottommost-text {
@@ -231,7 +251,7 @@ ul, ol {
 }
 @keyframes fun-summertime-palette-text {
   0% {
-    color: navy; 
+    color: gold; 
   }
   20% {
     color: tomato; 
@@ -240,10 +260,10 @@ ul, ol {
     color: red; 
   }
   60% {
-    color: fuchsia; 
+    color: gold; 
   }
   80% {
-    color: blue; 
+    color: snow; 
   }
 }
 
@@ -274,14 +294,14 @@ ul, ol {
 }
 
 .btn, .navbar-item, p {
-  font-family: 'PixelUnicode', san-serif;
+  font-family: 'NeueMachina-Regular', san-serif;
 }
 
 
 /* Links + hamburger w chromatic sauce */
 
 a {
-  animation: fun-summertime-palette-text 4s ease 0.95s infinite;
+  animation: fun-summertime-palette-text 14s ease 0.95s infinite;
 }
 
 a:hover,
@@ -304,7 +324,7 @@ a:focus {
 }
 
 h1, h2 {
-  font-family: '04B30';
+  font-family: 'NeueMachina-Ultrabold';
 }
 
 .svg-market-1 {
@@ -418,19 +438,19 @@ h1, h2 {
 }
 
 * {
-  font-family: "PixelUnicode";
+  font-family: "NeueMachina-Regular";
   color: #eee;
   font-size: 110%;
 }
 h1, h2, h3 {
-  font-family: '04B30';
+  font-family: 'NeueMachina-Ultrabold';
   font-size: 105%;
   color: red;
   text-shadow: -3px 3px 1px black;
 }
 
 h4, h5, h6 {
-  font-family: "PixelUnicode";
+  font-family: "NeueMachina-Regular";
 }
 /* such Shib branding, much wow */
 .desky-links {
@@ -593,6 +613,36 @@ h4, h5, h6 {
   overflow: hidden;
   height: 314px;
 }
+
+.jic {
+  -webkit-text-size-adjust: 100%;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding-bottom: 186px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.images91 {
+  background: url(./images/slide1.png);
+  height: 300px;
+  width: 1200px;
+}
+
 .images01 {
   transform: translate3d(0, 0, 0);
   background: url(./images/slide1.png);
@@ -790,14 +840,6 @@ a:hover {
 }
 .whyt {
   color: snow;
-}
-
-.hidden1 {
-  opacity: 0;
-}
-.visible1 {
-  opacity: 1;
-  transition: opacity 1s ease-out;
 }
 
 
@@ -1008,6 +1050,80 @@ a:hover {
   top: 20px;
   z-index: 100;
 }
+
+.link-like {
+  text-decoration: none;
+  font-size: 1.15rem;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 2vw 1vw;
+  transition: all 200ms ease-in;
+  position: relative;
+
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: tomato;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+
+  :hover {
+    color: blue;
+    ::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 4px 0;
+    font-size: 1.2rem;
+    z-index: 6;
+  }
+}
+
+/* celluloid filmstrip animation */
+.film-section {
+    -webkit-text-size-adjust: 100%;
+    font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 186px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 80px;
+}
+
+filmstrip-top {
+  will-change: transform;
+  transform: translate3d(-0.8592%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-8deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+filmstrip-lower {
+  will-change: transform;
+  transform: translate3d(0.8592%, 8.92%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-8deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
 @media only screen and (max-width: 480px) {
   .roady-title {
     color: red;

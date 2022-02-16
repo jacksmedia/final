@@ -56,7 +56,7 @@ const TopBar = styled.nav`
   align-items: center;
   align-self: center;
   text-transform: uppercase;
-  background: linear-gradient(#A0C6CC, #FE815B);
+  background: #161717;
   border-bottom: 2px solid #33333320;
   margin: 0 auto;
   padding: 0 5vw;
@@ -95,7 +95,7 @@ const Navtray = styled.div`
     width: 100%;
     justify-content: flex-start;
     padding-top: 15vh;
-    background: linear-gradient(#0172bd, black);
+    background: linear-gradient(#161717, black);
     transition: all 0.3s ease-in;
     top: 72px;
     right: ${props => (props.open ? "-100%" : "0")};
