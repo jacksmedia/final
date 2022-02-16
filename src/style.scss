@@ -458,20 +458,10 @@ h4, h5, h6 {
   text-shadow: -1px 1px 1px red;
 }
 
-.syrup-text {
-  color: #784314;
-  font-size: 155%;
-  text-shadow: -3px 3px 1px ivory,
-  3px 0px 1px ivory,
-  0px 3px 1px ivory,
-  3px -3px 1px ivory;
-}
+
 .dark-forest-text {
-  color: #111;
-  text-shadow: -2px 2px 1px snow,
-  2px 0px 1px snow,
-  0px 2px 1px snow,
-  2px -2px 1px snow;
+  color: #ff22ff;
+  text-shadow: 1px 1px 1px gold;
 }
 .eshib-bg-1 {
   background: url("./images/bg-piney.jpg");
@@ -1147,4 +1137,7 @@ filmstrip-lower {
 }
 body {
   font-size: 55%;
+}
+h1 {
+  text-transform: uppercase;
 }

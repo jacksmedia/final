@@ -50,8 +50,10 @@ const SplashyShibsRight = styled.div`
 const TopBar = styled.nav`
   min-height: 72px;
   height: 10vh;
-  position: relative;
+  top: 0;
+  position: fixed;
   display: flex;
+  min-width: 100%;
   justify-content: space-between;
   align-items: center;
   align-self: center;
