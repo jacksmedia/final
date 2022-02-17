@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "animate.css/animate.min.css"
 import { Link } from 'gatsby'
 import { useCookies } from 'react-cookie'
 import styled from 'styled-components'

@@ -186,7 +186,7 @@ const Navbar = () => {
           <NavbarLinks />
         </Navtray>
       ) : (
-        <Navtray open>
+        <Navtray open onClick={() => setNavbarOpen(!navbarOpen)}>
           <NavbarLinks />
         </Navtray>
       )}

@@ -32,7 +32,7 @@ const ScrollTo = styled.button`
   background: #0000;
   border: black 0 solid;
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 2.35rem;
   display: inline-block;
   white-space: nowrap;
   margin: 2vw 1vw;
@@ -68,7 +68,7 @@ const ScrollTo = styled.button`
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  font-size: 1.15rem;
+  font-size: 2.35rem;
   display: inline-block;
   white-space: nowrap;
   margin: 2vw 1vw;

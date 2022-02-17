@@ -8,6 +8,7 @@ import WaflToken from '../components/WaflToken'
 import BigWafl from '../components/BigWafl'
 import LkmexToken from '../components/LkmexToken'
 import IO from '../components/io'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Seo from '../components/seo'
 
 
@@ -50,65 +51,44 @@ const IndexPage = () => (
   <CookiesProvider>
     <Layout>
       <Seo title="Home" />
-      <div className="section ">
-       
-       
-      <IO rootMargin = '-1px'>
-        {({isVisible})=>(
-        <FilmZone isVisible={isVisible}>
-          <FilmStrip isVisible={isVisible}>
-            <div className="images91">
-            </div>
-          </FilmStrip>
-        </FilmZone>
-      )}</IO>
-      </div>
-      
-
       <div className="section spacer-zone ">
-
-         <div className="columns">
-          <div className="column gray">
-            <h2>Shiba NFTs with their Own Metaverse</h2>
-            <h2>Wait until you hold one for a few weeks!</h2>
-            <p>Welcome to the NFT era, fren! Elrond blockchain is home to 5000 Shiba pets that pay you!</p>
-            <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
-          </div>
-          <div className="column gray">
-       
-          </div>
-        </div>
+        <h1>A NEW ERA OF NFT UTILITY</h1>
+        <p>The Gutter Cat Gang DAO exists to transcend the potential of the Gang beyond that of your standard NFT community or club. The Gang survived an apocalypse and lived to tell the story of the Gutter DAO’s emergence from a collective of social network accounts and channels that transformed into a fully operational community run organization under the guise of the Gutter Cat Gang members.</p>
+        <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
       </div>
+
       <div className="section spacer-zone ">
         <h1 className="dark-forest-text">Loyal NFT pets that keep your crypto warm, here come the Elrond Shibas!</h1>
-      
       </div>
   
       <div className="section spacer-zone">
-         <div className="columns">
+        <div className="columns">
           <div className="column gray act-zone ">
-            <h2 className="whyt">Waves of Shiba are Arriving</h2>
+            <AnimationOnScroll animateIn="animate__bounceInUp">
+              <h2>Waves of Shiba are Arriving</h2>
+            </AnimationOnScroll>
             <p>Sailing in from ShibaWorld, these cute frens pay you for owning them!</p>
             <p>Adopt one from a trusted marketplace today!!</p>
             <p>Stay tuned to our social media for Wave 7 Mint news.</p>
             <a href="https://deadrare.io/collection/SHIB-50039b" className="button">BUY NOW</a>
           </div>
-          <div className="column gray">
-           
-          </div>
+          <div className="column gray"></div>
         </div>
       </div>
+
       <div className="section spacer-zone ">
         <h1 className="dark-forest-text">Earn 2 Types of Passive Income!!</h1>
-     
-        <h1 className="dark-forest-text">LKMEX and WAFL</h1>
+        <p className="dark-forest-text">LKMEX and WAFL</p>
       </div>
   
   
       <div className="section spacer-zone ">
         <div className="columns gray" id="faq">
           <div className="column ">
-            <h2 className="whyt">Elrond Shibas pay you LKMEX</h2>
+            <AnimationOnScroll animateIn="animate__bounceInUp">
+              <h2>Elrond Shibas pay you LKMEX</h2>
+            </AnimationOnScroll>
+
             <p>Stake your LKMEX on Maiar Exchange or spend it on NFTs!</p>
             <Link to="/lkmex" className="button center">LKMEX?</Link>
           </div>
@@ -117,38 +97,29 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+
+    
+      <div className="section spacer-zone" id="whitepaper">
+        <h1 className="">Read more about $WAFL and the SFTs in the Whitepaper!</h1>
+      </div>
+
       <div className="section spacer-zone 1">
         <h1 className="dark-forest-text">Every Saturday at 1400 UTC your Shibas will bring you more! #ShibaSaturday </h1>
       </div>
   
-  
-      <div className="section spacer-zone gray">
-       <div className="level columns is-mobile">
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-          <div className="column"><WaflToken /></div>
-        </div>
-         <div className="" id="wafl">
-          <div className="">
-            <h2>WAFL tokens</h2>
-            <p>Every day each Shiba earns you a $WAFL token! Squads and Packs of Shibs will earn you free SFTs like Shiba Gardens and Shiba Farms!</p>
-            <a href="https://trust.market/collection/SHIB-50039b" className="button">BUY on Trust.market</a>
-            </div>
-        </div>
-      </div>
-      <div className="section spacer-zone afl">        
-      </div>
-  
-  
-      <div className="section spacer-zone" id="whitepaper">
-      <h1 className="">Read more about $WAFL and the SFTs in the Whitepaper!</h1>
-
-      </div>
-
       <div className="section spacer-zone ">
+        <IO rootMargin = '-1px'>
+        {({isVisible})=>(
+        <FilmZone isVisible={isVisible}>
+          <FilmStrip isVisible={isVisible}>
+            <div className="images91"></div>
+          </FilmStrip>
+        </FilmZone>
+        )}</IO>
+      </div>
 
+      <div className="section spacer-zone">
+        <Link to="/rarity" className="button">Rarity Trait Charts</Link>        
       </div>
 
     </Layout>

@@ -26,6 +26,10 @@ $black: #242;
 
 /* font pairing  */
 @font-face {
+  font-family: 'NotoSans-Regular';
+  src: local('NotoSans-Regular.ttf'), url(./fonts/NotoSans-Regular.ttf) format('truetype');
+}
+@font-face {
   font-family: 'NeueMachina-Regular';
   src: local('NeueMachina-Regular.ttf'), url(./fonts/NeueMachina-Regular.ttf) format('truetype');
 }
@@ -251,19 +255,22 @@ ul, ol {
 }
 @keyframes fun-summertime-palette-text {
   0% {
-    color: gold; 
+    color: #555; 
   }
   20% {
-    color: tomato; 
+    color: maroon; 
   }
   40% {
     color: red; 
   }
   60% {
-    color: gold; 
+    color: navy; 
+  }
+  65% {
+    color: purple; 
   }
   80% {
-    color: snow; 
+    color: #333; 
   }
 }
 
@@ -293,9 +300,13 @@ ul, ol {
   animation: fun-summertime-palette-btn 6s ease 0.35s infinite alternate;
 }
 
-.btn, .navbar-item, p {
+p {
+  font-family: 'NotoSans-Regular', san-serif;
+}
+.btn, .navbar-item {
   font-family: 'NeueMachina-Regular', san-serif;
 }
+
 
 
 /* Links + hamburger w chromatic sauce */
@@ -445,7 +456,7 @@ h1, h2 {
 h1, h2, h3 {
   font-family: 'NeueMachina-Ultrabold';
   font-size: 105%;
-  color: red;
+  color: #f93;
   text-shadow: -3px 3px 1px black;
 }
 
@@ -460,8 +471,8 @@ h4, h5, h6 {
 
 
 .dark-forest-text {
-  color: #ff22ff;
-  text-shadow: 1px 1px 1px gold;
+  color: #A5C3C7;
+  text-shadow: 1px 1px 1px red;
 }
 .eshib-bg-1 {
   background: url("./images/bg-piney.jpg");
@@ -1114,12 +1125,6 @@ filmstrip-lower {
   will-change: transform;
   transform: translate3d(0.8592%, 8.92%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-8deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
-}
-
-@media only screen and (max-width: 480px) {
-  .roady-title {
-    color: red;
-  }
 }
 
 @media only screen and (max-width: 2559px) {
