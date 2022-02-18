@@ -54,7 +54,10 @@ $black: #242;
   src: local('NeueMachina-Regular.ttf'), url(./fonts/NeueMachina-Regular.ttf) format('truetype');
 }
 
-
+/* Shib colors */
+.bg-passionfruit {
+  background: linear-gradient(45deg, #ff815b, #9fc7cd);
+}
 
 
 
@@ -74,9 +77,9 @@ html {
 
 body {
   font-family: 'NeueMachina-Ultralight';
-  font-size: var(--fontSize-1);
+  font-size: 50%;
   color: $black;
-  background: linear-gradient(0deg, #161717 0%, #000000 100%);
+  background: linear-gradient(#0d2130, #161717);
 }
 
 hr {
@@ -274,17 +277,6 @@ ul, ol {
   }
 }
 
-@keyframes veggie-creamsicle-palette-text {
-  0% {
-    color: white; 
-  }
-  50% {
-    color: tomato; 
-  }
-  100% {
-    color: white; 
-  }
-}
 
 /* animated button bg colors */
 .btn {
@@ -388,8 +380,6 @@ h1, h2 {
 .spacer-zone {
   min-height: 800px;
   height: 60vh;
-  background: linear-gradient(#5553,#5556,#555f,#5556,#5553);
-  background-attachment: scroll;
 }
 .all-right {
   display: flex;
@@ -792,10 +782,9 @@ strong  {
 .smoltext {
   font-size: 75%;
 }
-.hero-size-text {
-  font-size: 3.3rem;
-  text-align: center;
-  color: snow;
+.hero-text {
+  font-size: 3.6rem;
+  text-transform: uppercase;
 }
 .navicon {
   font-size: 0.7em;
@@ -1127,6 +1116,103 @@ filmstrip-lower {
   transform-style: preserve-3d;
 }
 
+/* from animate.css modified for here*/
+@-webkit-keyframes letterByLetterBounceIn {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0) scaleY(5);
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes letterByLetterBounceIn {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3000px, 0) scaleY(5);
+    transform: translate3d(0, 3000px, 0) scaleY(5);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -20px, 0) scaleY(0.9);
+    transform: translate3d(0, -20px, 0) scaleY(0.9);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 10px, 0) scaleY(0.95);
+    transform: translate3d(0, 10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -5px, 0) scaleY(0.985);
+    transform: translate3d(0, -5px, 0) scaleY(0.985);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__letterByLetterBounceIn {
+  -webkit-animation-name: letterByLetterBounceIn;
+  animation-name: letterByLetterBounceIn;
+}
+/* end 3rd party mod */
+
+/* tilt and wobble image on landing page */
+@keyframes skewWobble {
+  from {
+    color: red;
+  }
+  to {
+    color: blue;
+  }
+}
+
+.skewWobble {
+  animation: skewWobble 14s ease 0.95s infinite;
+}
+/**/
+
+
 @media only screen and (max-width: 2559px) {
   th {
     font-size: 65%;
@@ -1139,10 +1225,4 @@ filmstrip-lower {
   * {
     font-size: 98%;
   }
-}
-body {
-  font-size: 55%;
-}
-h1 {
-  text-transform: uppercase;
 }

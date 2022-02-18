@@ -13,7 +13,6 @@ const Layout = ({ location, title, children }) => {
     <div>
       <header>
         <Navbar />
-        <h1 className="section hero-size-text">Elrond Shibas</h1>
       </header>
       <section className="mains">{children}</section>
        <div className="level is-mobile m-5">
