@@ -279,6 +279,14 @@ ul, ol {
 
 
 /* animated button bg colors */
+@keyframes clickDown {
+  from {
+    color: black;
+  }
+  to {
+    color: lime;
+  }
+}
 .btn {
   border: none;
   color: black;
@@ -288,8 +296,7 @@ ul, ol {
   font-size: 2.9vw;
   border-radius: 2vw;
   margin: 4px 2px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  animation: fun-summertime-palette-btn 6s ease 0.35s infinite alternate;
+  animation: clickDown 0.5s linear 0.15s;
 }
 
 p {
@@ -348,6 +355,8 @@ h1, h2 {
   height: 20px;
   background-size: cover;
 }
+
+
 
 .fade {
   animation: fade-out-keyframes 1s;
@@ -457,12 +466,6 @@ h4, h5, h6 {
 .desky-links {
   font-size: 17px;
   text-shadow: -1px 1px 1px red;
-}
-
-
-.dark-forest-text {
-  color: #A5C3C7;
-  text-shadow: 1px 1px 1px red;
 }
 .eshib-bg-1 {
   background: url("./images/bg-piney.jpg");
@@ -1198,20 +1201,37 @@ filmstrip-lower {
 /* end 3rd party mod */
 
 /* tilt and wobble image on landing page */
-@keyframes skewWobble {
+
+
+@keyframes wibble {
   from {
-    color: red;
+    transform: skew(0deg, 0deg) rotate(0deg);
   }
+
   to {
-    color: blue;
+    transform: skew(3deg, 3deg) rotate(3deg);
   }
 }
-
-.skewWobble {
-  animation: skewWobble 14s ease 0.95s infinite;
+.anyshib {
+  animation-duration: 2s;
+  animation-name: wibble;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-/**/
 
+.wibble-card {
+  padding: 12px;
+  border: 1px solid snow;
+  border-radius: 0.5rem;
+  width: 294px;
+}
+
+
+
+.dark-forest-text {
+  color: snow;
+  text-shadow: 1px 1px 1px black;
+}
 
 @media only screen and (max-width: 2559px) {
   th {

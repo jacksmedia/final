@@ -59,22 +59,28 @@ const IndexPage = () => (
           <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
         </div>
         <div className="column">
-          <StaticImage
-            className="tiny-icon"
-            layout="fixed"
-            formats={["AUTO", "WEBP", "AVIF"]}
-            src="../images/samuraishib.png"
-            width={270}
-            height={270}
-            quality={95}
-            alt="Elrond Shibas, the legendary Samurai"
-          />
+          <div className="wibble-card anyshib">
+            <StaticImage
+              className="tiny-icon"
+              layout="fixed"
+              formats={["AUTO", "WEBP", "AVIF"]}
+              src="../images/samuraishib.png"
+              width={270}
+              height={270}
+              quality={95}
+              alt="Elrond Shibas, the legendary Samurai"
+            />
+            <div>
+              <p className="dark-forest-text">Elrond Shiba #99999</p>
+              <p className="smoltext">Omaewa mo shinderu, bork</p>
+            </div>
+          </div>
         </div>
 
       </div>
 
       <div className="section spacer-zone ">
-        <h1 className="dark-forest-text">Loyal NFT pets that keep your crypto warm, here come the Elrond Shibas!</h1>
+        <h1 className="dark-forest-text">Busy pets that pay you for adopting them!</h1>
       </div>
   
       <div className="section spacer-zone">
