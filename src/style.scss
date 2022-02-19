@@ -524,7 +524,7 @@ h4, h5, h6 {
 
 /* vertical slides  */
 
-.slideshow {
+.slideshow2 {
   position: relative;
   overflow: hidden;
   height: 63vh;
@@ -536,45 +536,54 @@ h4, h5, h6 {
   background: url(./images/shibbon1.png);
   position: absolute;
   height: 300%;
-  width: 206px;
-  animation: slideshow 33s infinite alternate;
-  z-index: 1021;
+  width: 160px;
+  animation: slideshow2 33s infinite alternate;
+  opacity: 0.4;
 }
 .splash-slides-2 {
   transform: translate3d(0, 0, 0);
   background: url(./images/shibbon2.png);
   position: absolute;
   height: 300%;
-  width: 206px;
-  animation: slideshow 33s infinite alternate;
-  z-index: 1021;
+  width: 160px;
+  animation: slideshow2 41s infinite alternate;
+  opacity: 0.4;
 }
 .splash-slides-3 {
   transform: translate3d(0, 0, 0);
   background: url(./images/shibbon3.png);
   position: absolute;
   height: 300%;
-  width: 206px;
-  animation: slideshow 33s infinite alternate;
-  z-index: 1021;
+  width: 160px;
+  animation: slideshow2 28s infinite alternate;
+  opacity: 0.4;
 }
 .splash-slides-4 {
   transform: translate3d(0, 0, 0);
   background: url(./images/shibbon4.png);
   position: absolute;
   height: 300%;
-  width: 206px;
-  animation: slideshow 33s infinite alternate;
-  z-index: 1021;
+  width: 160px;
+  animation: slideshow2 47s infinite alternate;
+  opacity: 0.4;
 }
 .splash-slides-5 {
   transform: translate3d(0, 0, 0);
   background: url(./images/shibbon5.png);
   position: absolute;
   height: 300%;
-  width: 206px;
-  animation: slideshow 33s infinite alternate;
-  z-index: 1021;
+  width: 160px;
+  animation: slideshow2 36s infinite alternate;
+  opacity: 0.4;
+}
+.splash-slides-6 {
+  transform: translate3d(0, 0, 0);
+  background: url(./images/shibbon6.png);
+  position: absolute;
+  height: 300%;
+  width: 160px;
+  animation: slideshow2 53s infinite alternate;
+  opacity: 0.4;
 }
 
 
@@ -632,16 +641,12 @@ h4, h5, h6 {
 
 /* horiz slides */
 .slideshow {
+  width: auto;
   position: relative;
   overflow: hidden;
   height: 314px;
 }
 
-.images91 {
-  background: url(./images/slide1.png);
-  height: 300px;
-  width: 1200px;
-}
 
 .images01 {
   transform: translate3d(0, 0, 0);
@@ -651,7 +656,7 @@ h4, h5, h6 {
   top: 0;
   height: 100%;
   width: 300%;
-  animation: slideshow 13s linear infinite;
+  animation: slideshow 53s linear;
 }
 .images02 {
   transform: translate3d(0, 0, 0);
@@ -661,7 +666,7 @@ h4, h5, h6 {
   top: 0;
   height: 100%;
   width: 300%;
-  animation: slideshow 13s linear infinite;
+  animation: slideshow 37s infinite alternate;
 }
 .images03 {
   transform: translate3d(0, 0, 0);
@@ -835,14 +840,17 @@ strong  {
   position: relative;
 }
 
+.dim-oval {
+  position: fixed;
+  z-index: 9999;
+  background: navy;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
 
 /* handle first and last */
-.tile:first-child {
-  background-color: #6666;
-}
-.tile:last-child {
-  background-color: #3333;
-}
 a {
   color: #9FC7CD;
 }

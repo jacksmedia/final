@@ -223,24 +223,50 @@ const Navbar = () => {
         { isSplash ? (
           <>
           <SplashyShibsLeft open>
-            
             <button className="special-btn" open onClick={handleSplash}>Visit Shibaworld</button>
           </SplashyShibsLeft>
-          <SplashyShibsRight open>
-            <div className="splash-slides-1"></div>
-            <div className="splash-slides-3"></div>
-            <div className="splash-slides-5"></div>
-          </SplashyShibsRight>
+          <SplashyShibsRight open></SplashyShibsRight>
           </>          
           ) : (
           <>
           <SplashyShibsLeft>
-            
+            <div className="tile is-ancestor">
+              <div className="tile is-parent">
+                <div className="tile is-child">
+                  <div className="splash-slides-6"></div>
+                </div>
+              </div>
+              <div className="tile is-parent">
+                <div className="tile is-child">
+                  <div className="splash-slides-1"></div>
+                </div>
+              </div>
+              <div className="tile is-parent">
+                <div className="tile is-child">
+                  <div className="splash-slides-2"></div>
+                </div>
+              </div>
+            </div>
             <div className="splash-btn special-btn p-3" open onClick={handleSplash}>Visit Shibaworld</div>
           </SplashyShibsLeft>
           <SplashyShibsRight>
-            <div className="splash-slides-1"></div>
-            <div className="splash-slides-5"></div>
+            <div className="tile is-ancestor">
+              <div className="tile is-parent">
+                <div className="tile is-child">
+                  <div className="splash-slides-3"></div>
+                </div>
+              </div>
+              <div className="tile is-parent">
+                <div className="tile is-child">
+                  <div className="splash-slides-4"></div>
+                </div>
+              </div>
+              <div className="tile is-parent">
+                <div className="tile is-child">
+                  <div className="splash-slides-5"></div>
+                </div>
+              </div>
+            </div>
           </SplashyShibsRight>
           </>
           )

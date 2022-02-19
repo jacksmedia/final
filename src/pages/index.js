@@ -11,7 +11,6 @@ import IO from '../components/io'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Seo from '../components/seo'
 
-
 const IndexPage = () => (
   <CookiesProvider>
     <Layout>
@@ -151,7 +150,8 @@ const IndexPage = () => (
       </div>
   
       <div className="section">
-        
+        <div className="slideshow"><div className="images01"></div></div>
+        <div className="slideshow"><div className="images02"></div></div>
       </div>
 
       <div className="section">
