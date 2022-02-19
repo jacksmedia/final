@@ -12,41 +12,6 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Seo from '../components/seo'
 
 
-const FilmZone = styled.div`
-  -webkit-text-size-adjust: 100%;
-  font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
-  color: #333;
-  font-size: 14px;
-  line-height: 20px;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  height: 90vh;
-  margin-bottom: 0;
-  padding-bottom: 186px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-top: 80px;
-  transition: background-color 8.5s ease;
-  background-color: ${({ isVisible }) => (isVisible ? '#0000' : 'snow')};
-`
-const FilmStrip = styled.div`
-  background: url(./images/slide1.png);
-  height: 300px;
-  width: 1200px;
-  transform: translate3d(-0.8592%, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-8deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
-  transition: left 20s linear;
-  left: ${({ isVisible }) => (isVisible ? '-100%' : '100%')};
-`
-
 const IndexPage = () => (
   <CookiesProvider>
     <Layout>
@@ -132,8 +97,8 @@ const IndexPage = () => (
 
       </div>
 
-      <div className="section">    
-        <div className="navBar-safetypad" id="faq"></div>
+      <div className="section" id="faq">    
+        <div className="navBar-safetypad"></div>
         <div className="level center">
           <p className="hero-text">
             <AnimationOnScroll animateIn="animate__fadeInUp">F</AnimationOnScroll>
@@ -186,16 +151,7 @@ const IndexPage = () => (
       </div>
   
       <div className="section">
-        <IO rootMargin = '-1px'>
-        {({isVisible})=>(
-        <FilmZone isVisible={isVisible}>
-          <FilmStrip isVisible={isVisible}>
-            <div className="images91"></div>
-          </FilmStrip>
-          <p>Animation on scroll imminent
-          </p>
-        </FilmZone>
-        )}</IO>
+        
       </div>
 
       <div className="section">

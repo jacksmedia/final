@@ -9,6 +9,7 @@ const Wave7 = () => (
   <Layout className="wave6-colors">
     <Seo title="Wave 7" className="level is-mobile"/>
      <div className="">
+       <div className="navBar-safetypad"></div>
        <StaticImage
           className="mt-5"
           src="../images/wave7-banner.jpg"

@@ -523,19 +523,61 @@ h4, h5, h6 {
 .eshib-bg-13 {background: linear-gradient(#65A09D,#3C3232);}
 
 /* vertical slides  */
-.slideshow-splash {
-  position: relative;
-  overflow: hidden;
-  height: 101vh;
-  z-index: 3;
-}
-.slideshow2 {
+
+.slideshow {
   position: relative;
   overflow: hidden;
   height: 63vh;
   max-height: 63vh;
   min-height: 63vh;
 }
+.splash-slides-1 {
+  transform: translate3d(0, 0, 0);
+  background: url(./images/shibbon1.png);
+  position: absolute;
+  height: 300%;
+  width: 206px;
+  animation: slideshow 33s infinite alternate;
+  z-index: 1021;
+}
+.splash-slides-2 {
+  transform: translate3d(0, 0, 0);
+  background: url(./images/shibbon2.png);
+  position: absolute;
+  height: 300%;
+  width: 206px;
+  animation: slideshow 33s infinite alternate;
+  z-index: 1021;
+}
+.splash-slides-3 {
+  transform: translate3d(0, 0, 0);
+  background: url(./images/shibbon3.png);
+  position: absolute;
+  height: 300%;
+  width: 206px;
+  animation: slideshow 33s infinite alternate;
+  z-index: 1021;
+}
+.splash-slides-4 {
+  transform: translate3d(0, 0, 0);
+  background: url(./images/shibbon4.png);
+  position: absolute;
+  height: 300%;
+  width: 206px;
+  animation: slideshow 33s infinite alternate;
+  z-index: 1021;
+}
+.splash-slides-5 {
+  transform: translate3d(0, 0, 0);
+  background: url(./images/shibbon5.png);
+  position: absolute;
+  height: 300%;
+  width: 206px;
+  animation: slideshow 33s infinite alternate;
+  z-index: 1021;
+}
+
+
 .images-1 {
   transform: translate3d(0, 0, 0);
   background: url(./images/doges1.png);
@@ -586,49 +628,13 @@ h4, h5, h6 {
   width: 104px;
   animation: slideshow2 73s linear infinite;
 }
-.images-6 {
-  transform: translate3d(0, 0, 0);
-  background: url(./images/doges-ghosty.png);
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 300%;
-  width: 206px;
-  animation: slideshow2 73s linear infinite;
-}
-/* to place slides on SplashFrame in NavBar */
-.splashed {
-  
-}
+
 
 /* horiz slides */
 .slideshow {
   position: relative;
   overflow: hidden;
   height: 314px;
-}
-
-.jic {
-  -webkit-text-size-adjust: 100%;
-  color: #333;
-  font-size: 14px;
-  line-height: 20px;
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-  margin-bottom: 0;
-  padding-bottom: 186px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  padding-top: 80px;
 }
 
 .images91 {
@@ -729,18 +735,23 @@ h4, h5, h6 {
 }
 .splash-btn {
   margin: 0 0 0 0;
-  background: #DD3000;
-  min-width: 50vw;
+  background: linear-gradient(-45deg, #ff815b, #9fc7cd);
+  min-width: 30vw;
   height: 70px;
   z-index: 3003;
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 35vw;
+  top: 70%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.splash-btn:hover {
+  color: maroon;
+  transition: all 200ms ease-in;
+}
+
 p {
   padding-left: 1.2rem;
 }
@@ -1067,7 +1078,6 @@ a:hover {
 
 .link-like {
   text-decoration: none;
-  font-size: 1.15rem;
   display: inline-block;
   white-space: nowrap;
   margin: 2vw 1vw;
@@ -1251,18 +1261,21 @@ filmstrip-lower {
 }
 
 .wibble-card {
+  background: #4d0000;
   padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
   width: 207px;
 }
 .wibble-card-2 {
+  background: #4d0000;
   padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
   width: 264px;
 }
 .wibble-card-3 {
+  background: #4d0000;
   padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;

@@ -43,7 +43,7 @@ const SplashyShibsRight = styled.div`
   position: absolute;
   display: flex;
   padding: 0 0 0 0;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: linear-gradient(#161717, black);
   margin: 0 auto;
@@ -65,7 +65,6 @@ const TopBar = styled.nav`
   margin: 0 auto;
   padding: 0 5vw;
   position: fixed;
-  height: 8vh;
   top: 0;
   left: 0;
   right: 0;
@@ -129,11 +128,14 @@ const Hamburger = styled.div`
   }
 `
 
-const ScrollTo = styled.button`
+const ScrollTo = styled.h4`
   background: #0000;
   border: black 0 solid;
   text-decoration: none;
   font-size: 2.35rem;
+  font-family: "Neue Machina Bold";
+  display: inline-block;
+  white-space: nowrap;
   display: inline-block;
   white-space: nowrap;
   margin: 2vw 1vw;
@@ -170,6 +172,7 @@ const ScrollTo = styled.button`
 const NavItem = styled(Link)`
   text-decoration: none;
   font-size: 2.35rem;
+  font-family: "Neue Machina Bold";
   display: inline-block;
   white-space: nowrap;
   margin: 2vw 1vw;
@@ -220,22 +223,24 @@ const Navbar = () => {
         { isSplash ? (
           <>
           <SplashyShibsLeft open>
+            
             <button className="special-btn" open onClick={handleSplash}>Visit Shibaworld</button>
           </SplashyShibsLeft>
-          <SplashyShibsRight open></SplashyShibsRight>
+          <SplashyShibsRight open>
+            <div className="splash-slides-1"></div>
+            <div className="splash-slides-3"></div>
+            <div className="splash-slides-5"></div>
+          </SplashyShibsRight>
           </>          
           ) : (
           <>
           <SplashyShibsLeft>
-            <div className="splashed slideshow level is-mobile">
-              <div className="images01"></div>
-            </div>
-            <div className="splash-btn" open onClick={handleSplash}>Visit Shibaworld</div>
+            
+            <div className="splash-btn special-btn p-3" open onClick={handleSplash}>Visit Shibaworld</div>
           </SplashyShibsLeft>
           <SplashyShibsRight>
-            <div className="splashed slideshow2 is-hidden-mobile">
-              <div className="images-2"></div>
-            </div>
+            <div className="splash-slides-1"></div>
+            <div className="splash-slides-5"></div>
           </SplashyShibsRight>
           </>
           )
@@ -258,10 +263,10 @@ const Navbar = () => {
           <Navtray>
 
             <div className="ml-3 mr-3">
-              <div className="">
-                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="is-hoverable">FAQ</ScrollTo>
-                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="is-hoverable">Roadmap</ScrollTo>
-                <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
+              <div className="level">
+                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="level-left is-hoverable"><h4>FAQ</h4></ScrollTo>
+                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="level-item is-hoverable"><h4>Roadmap</h4></ScrollTo>
+                <a href="https://mint.elrondshibas.com" className="level-right link-like is-hoverable "><h4>Mint</h4></a>
               </div>
               <hr className="is-hidden-tablet" />
               <div className="">
