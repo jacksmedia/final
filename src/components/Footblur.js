@@ -9,18 +9,19 @@ const Footblur = () => {
         <p>Website by <a href="https://jacks.media">Jacks Media</a>
         {`, `}{new Date().getFullYear()}</p>
       <div className="bottommost-text">
-        <div className="center-tightly">
+        <div className="center">
         <StaticImage
           className="tiny-icon"
+          color="snow"
           layout="fixed"
           formats={["AUTO", "WEBP", "AVIF"]}
           src="../images/egld.svg"
-          width={48}
-          height={48}
+          width={36}
+          height={36}
           quality={95}
           alt="Egold symbol"
         />
-        <h4 className="engraved">CDO: {daowallet}</h4>
+        <p className="h-smoltext">CDO: {daowallet}</p>
         </div>
       </div>
     </div>

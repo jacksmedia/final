@@ -93,7 +93,7 @@ const Navtray = styled.div`
   justify-content: flex-start;
   padding-top: 15vh;
   background: linear-gradient(#161717, black);
-  transition: all 0.5s ease-in;
+  transition: all 0.22s ease-in;
   right: ${props => (props.open ? "-100%" : "0")};
 `
 
@@ -205,11 +205,14 @@ const NavItem = styled(Link)`
 
 const Navbar = () => {
   const [ isSplash, setSplash ] = useState(true)
-  const handleToggle = () => {
+  const handleSplash = () => {
     setSplash(!isSplash)
   }
 
   const [navbarOpen, setNavbarOpen] = useState(false)
+  const handleNav = () => {
+    setNavbarOpen(!navbarOpen)
+  }
 
   return (
     <>
@@ -217,7 +220,7 @@ const Navbar = () => {
         { isSplash ? (
           <>
           <SplashyShibsLeft open>
-            <button className="special-btn" open onClick={handleToggle}>Visit Shibaworld</button>
+            <button className="special-btn" open onClick={handleSplash}>Visit Shibaworld</button>
           </SplashyShibsLeft>
           <SplashyShibsRight open></SplashyShibsRight>
           </>          
@@ -227,7 +230,7 @@ const Navbar = () => {
             <div className="splashed slideshow level is-mobile">
               <div className="images01"></div>
             </div>
-            <div className="splash-btn" open onClick={handleToggle}>Visit Shibaworld</div>
+            <div className="splash-btn" open onClick={handleSplash}>Visit Shibaworld</div>
           </SplashyShibsLeft>
           <SplashyShibsRight>
             <div className="splashed slideshow2 is-hidden-mobile">
@@ -239,13 +242,13 @@ const Navbar = () => {
         }
         </SplashFrame>
         <TopBar>
-          <button onClick={handleToggle} className="clearpiece">
+          <button onClick={handleSplash} className="clearpiece">
             <Logowrap />
           </button>
         <Toggle
           className="bg-passionfruit"
           navbarOpen={navbarOpen}
-          onClick={() => setNavbarOpen(!navbarOpen)}
+          onClick={handleNav}
         >
           {navbarOpen ? (<Hamburger open />) : 
             (<Hamburger />)
@@ -254,44 +257,44 @@ const Navbar = () => {
         {navbarOpen ? (
           <Navtray>
 
-            <div className="level">
-              <div className="level-left">
-                <ScrollTo onClick={() => scrollTo('#faq')} className="is-hoverable">FAQ</ScrollTo>
-                <ScrollTo onClick={() => scrollTo('#roadmap')} className="is-hoverable">Roadmap</ScrollTo>
+            <div className="ml-3 mr-3">
+              <div className="">
+                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="is-hoverable">FAQ</ScrollTo>
+                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="is-hoverable">Roadmap</ScrollTo>
                 <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
               </div>
               <hr className="is-hidden-tablet" />
-              <div className="level-item">
+              <div className="">
                 <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Discord</span></NavItem>
                 <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Twitter</span></NavItem>
                 <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Insta</span></NavItem>
               </div>
-              <div className="level-right">
-                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
-                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
+              <div className="">
+                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
+                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
                 <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="svg-market-3 is-hoverable"></div><div className="is-hidden-tablet">Isengard</div></NavItem>
               </div>
             </div>
           
           </Navtray>
         ) : (
-          <Navtray open onClick={() => setNavbarOpen(!navbarOpen)}>
+          <Navtray open onClick={handleNav}>
             
-            <div className="level">
-              <div className="level-left">
-                <ScrollTo onClick={() => scrollTo('#faq')} className="is-hoverable">FAQ</ScrollTo>
-                <ScrollTo onClick={() => scrollTo('#roadmap')} className="is-hoverable">Roadmap</ScrollTo>
+            <div className="">
+              <div className="">
+                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="is-hoverable">FAQ</ScrollTo>
+                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="is-hoverable">Roadmap</ScrollTo>
                 <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
               </div>
               <hr className="is-hidden-tablet" />
-              <div className="level-item">
+              <div className="">
                 <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Discord</span></NavItem>
                 <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Twitter</span></NavItem>
                 <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Insta</span></NavItem>
               </div>
-              <div className="level-right">
-                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
-                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
+              <div className="">
+                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
+                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
                 <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="svg-market-3 is-hoverable"></div><div className="is-hidden-tablet">Isengard</div></NavItem>
               </div>
             </div>

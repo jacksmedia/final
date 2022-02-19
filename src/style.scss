@@ -79,7 +79,7 @@ body {
   font-family: 'NeueMachina-Ultralight';
   font-size: 50%;
   color: $black;
-  background: linear-gradient(#0d2130, #161717);
+  background: linear-gradient(#4d0000, #161717);
 }
 
 hr {
@@ -784,8 +784,15 @@ strong  {
 .smoltext {
   font-size: 75%;
 }
+.h-smoltext {
+  font-size: 25%;
+  overflow-wrap: break-word;
+}
+.v-smoltext {
+  font-size: 65%;
+}
 .hero-text {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
   display: inline;
 }
@@ -1236,18 +1243,30 @@ filmstrip-lower {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
+.anyshib-3 {
+  animation-duration: 5.5s;
+  animation-name: wibble;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
 .wibble-card {
-  padding: 12px;
+  padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
-  width: 294px;
+  width: 207px;
 }
 .wibble-card-2 {
-  padding: 12px;
+  padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
   width: 264px;
+}
+.wibble-card-3 {
+  padding: 11px;
+  border: 1px solid snow;
+  border-radius: 0.5rem;
+  width: 222px;
 }
 
 .navBar-safetypad {
@@ -1270,16 +1289,15 @@ filmstrip-lower {
   padding-bottom: 1vh;
 }
 
+.min-30vh {
+  min-height: 30vh;
+}
+
 @media only screen and (max-width: 2559px) {
   th {
-    font-size: 65%;
+    font-size: 33%;
   }
   td {
-    font-size: 65%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  * {
-    font-size: 98%;
+    font-size: 33%;
   }
 }
