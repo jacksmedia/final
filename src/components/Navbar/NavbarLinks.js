@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import scrollTo from 'gatsby-plugin-smoothscroll'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -10,7 +11,7 @@ const NavbarLinks = () => {
     <div className="level">
       <div className="level-left">
         <ScrollTo onClick={() => scrollTo('#faq')} className="is-hoverable">FAQ</ScrollTo>
-        <ScrollTo onClick={() => scrollTo('#whitepaper')} className="is-hoverable">Whitepaper</ScrollTo>
+        <ScrollTo onClick={() => scrollTo('#roadmap')} className="is-hoverable">Roadmap</ScrollTo>
         <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
       </div>
       <hr className="is-hidden-tablet" />
@@ -89,7 +90,7 @@ const NavItem = styled(Link)`
   }
 
   :hover {
-    color: blue;
+    color: #f93;
     ::after {
       width: 100%;
     }

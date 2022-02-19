@@ -8,6 +8,7 @@ const Rarity = () => (
   <Layout>
     <Seo title="Rarity" />
     <div className="container is-fluid pt-3">
+      <div className="navBar-safetypad"></div>
       <p>NFT(SHIB-50039b) Collection Traits Rarity</p>
       <h2>All Shiba Digs</h2>
       <StaticImage

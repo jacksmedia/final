@@ -35,7 +35,7 @@ const FilmZone = styled.div`
   align-items: center;
   padding-top: 80px;
   transition: background-color 8.5s ease;
-  background-color: ${({ isVisible }) => (isVisible ? 'snow' : ' navy')};
+  background-color: ${({ isVisible }) => (isVisible ? '#0000' : 'snow')};
 `
 const FilmStrip = styled.div`
   background: url(./images/slide1.png);
@@ -51,13 +51,15 @@ const IndexPage = () => (
   <CookiesProvider>
     <Layout>
       <Seo title="Home" />
-      <div className="section spacer-zone columns">
+      <div className="navBar-safetypad"></div>
+      <div className="mt-5 pt-5 section spacer-zone columns">
         
         <div className="column">
           <h1 className="hero-text">Next-Level NFT Community</h1>
           <p>The Elrond Shibas CDO expands upon traditional NFT clubs (DAOs) by offering passive income and rewarding continued membership. The team is building a ShibaWorld of NFTs and SFTs unlike anything Earth has ever seen. Adopt and join our expanding world of $WAFL tokens, Shiba SFTs, and much joyful borking!</p>
           <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
         </div>
+
         <div className="column">
           <div className="wibble-card anyshib">
             <StaticImage
@@ -71,174 +73,93 @@ const IndexPage = () => (
               alt="Elrond Shibas, the legendary Samurai"
             />
             <div>
-              <p className="dark-forest-text">Elrond Shiba #99999</p>
-              <p className="smoltext">Omaewa mo shinderu, bork</p>
+              <p className="dark-forest-text">Elrond Shiba #3110</p>
+              <p className="smoltext">"お前はもう死んでいる, bork"</p>
+              <div className="level">
+                <p className="smoltext level-left">Rank 6 / 5000</p>
+                <p className="smoltext level-right pr-3"><a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities">Traits</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="column is-hidden-mobile">
+          <div className="wibble-card-2 anyshib-2">
+            <StaticImage
+              className="tiny-icon"
+              layout="fixed"
+              formats={["AUTO", "WEBP", "AVIF"]}
+              src="../images/dobro.png"
+              width={240}
+              height={240}
+              quality={95}
+              alt="Elrond Shibas, the Russian partyboi"
+            />
+            <div>
+              <p className="dark-forest-text">Elrond Shiba #3212</p>
+              <p className="smoltext">"Добро пожаловать на вечеринку! 🎉"</p>
+              <div className="level">
+                <p className="smoltext level-left">Rank 21 / 5000</p>
+                <p className="smoltext level-right pr-3"><a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities">Traits</a></p>
+              </div>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div className="section spacer-zone ">
-        <h1 className="dark-forest-text">Busy pets that pay you for adopting them!</h1>
-      </div>
-  
-      <div className="section spacer-zone">
+      <div className="section">    
+        <div className="navBar-safetypad" id="faq"></div>
+        <div className="level center">
+          <p className="hero-text">
+            <AnimationOnScroll animateIn="animate__fadeInUp">F</AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInUp">A</AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInUp">Q</AnimationOnScroll>
+          </p>
+        </div>
+
         <div className="columns">
-          <div className="column act-zone ">
-            <AnimationOnScroll animateIn="animate__bounceInUp">
-              <h2>Waves of Shiba are Arriving</h2>
-            </AnimationOnScroll>
-            <div className="">
-              <p className="">Sailing in from ShibaWorld, these cute frens pay you for owning them!</p>
-              <p>Adopt one from a trusted marketplace today!!</p>
-              <p>Stay tuned to our social media for Wave 7 Mint news.</p>
-            </div>
+          <div className="column act-zone">
+            <p className="">Sailing in from ShibaWorld, these cute frens pay you for owning them!</p>
+            <p>Adopt one from a trusted marketplace today!!</p>
+            <p>Stay tuned to our social media for Wave 7 Mint news.</p>
             <a href="https://deadrare.io/collection/SHIB-50039b" className="button">BUY NOW</a>
           </div>
+
           <div className="column"></div>
         </div>
       </div>
-
-      <div className="section spacer-zone ">
-        <h1 className="dark-forest-text">Earn 2 Types of Passive Income!!</h1>
-        <p className="dark-forest-text">LKMEX and WAFL</p>
-      </div>
-  
   
       <div className="section">
-        <div className="" id="faq">
-          <AnimationOnScroll animateIn="animate__bounceInUp">
-            <h2>FAQ</h2>
-          </AnimationOnScroll>
-          <div className="level center">
-      <h1>Roadmap</h1>
-    </div>
-    <div className="section eshib-bg-13 level">
-      <div class="timeline">
-        <div class="roady right">
-          <div class="date">Q1</div>
-          <i class="icon fa fa-home"></i>
-          <div class="content">
-            <h4 className="roady-title">SHIB-50039b Mint Completed</h4>
-            <p>All rewards and contests distributed</p>
-            <p>All Shibas offchain, in circulation</p>
-          </div>
+        <div className="navBar-safetypad" id="roadmap"></div>
+        <div className="level center">
+          <AnimationOnScroll animateIn="animate__fadeInUp"><h1>Roadmap</h1></AnimationOnScroll>
         </div>
-        <div class="roady left">
-          <div class="date">Q2</div>
-          <i class="icon fa fa-home"></i>
-          <div class="content">
-            <h4 className="roady-title">ANIShib collection mint</h4>
-            <p>New ShibaWorld adventure begins!</p>
-          </div>
-        </div>
-        <div class="roady right">
-          <div class="date">Q2</div>
-          <i class="icon fa fa-user"></i>
-          <div class="content">
-            <h4 className="roady-title">Elrond Shiba Merch Store</h4>
-            <p>Digs, Headpieces, Specs and more-- financed by CDO royalties</p>
-            <p>Purchaseable with $WAFL, $USD</p>
-          </div>
-        </div>
-        <div class="roady left">
-          <div class="date">Q3</div>
-          <i class="icon fa fa-gift"></i>
-          <div class="content">
-            <h4 className="roady-title">Mint 3DSHIB NFT collection</h4>
-            <p>such voxels bork</p>
-            <p>$WAFL allowed as mint currency for 1/2 collection</p>
-          </div>
-        </div>
-        <div class="roady right">
-          <div class="date">Q3</div>
-          <i class="icon fa fa-running"></i>
-          <div class="content">
-            <h4 className="roady-title">Gateway to ShibaWorld</h4>
-            <p>Zoning assignment begins for Shiba Gardens, Shiba Farms, Shiba Castles, and Shiba Spaceports</p>
-            <p>WAFL can purchase real estate in ShibaWorld.</p>
-          </div>
-        </div>
-        <div class="roady left">
-          <div class="date">Q4</div>
-          <i class="icon fa fa-cog"></i>
-          <div class="content">
-            <h4 className="roady-title">ShibaWorld metaverse launch</h4>
-            <p>SHBWRLD NFTs become playable characters!</p>
-          </div>
-        </div>
-        <div class="roady right">
-          <div class="date">Q4</div>
-          <i class="icon fa fa-certificate"></i>
-          <div class="content">
-            <h4 className="roady-title">$WAFL on MaiarDex</h4>
-            <p>
-            $WAFL registered as Tradeable Asset (SEC, other regulations fulfilled)
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="spacer-zone">
-      <h2 className="pl-3 pt-2"> Anime Shibas (ANISHIB) NFT collection</h2>
-      <ul>
-        <li>5000 Supply, each collections</li>
-        <li>2,500 Buyable ONLY with $WAFL</li>
-        <li>2,500 Buyable ONLY with $EGLD</li>
-        <li>Future collections: same ½ EGLD - ½ WAFL approach</li>
-      </ul>
-      <div className="tile is-parent is-60vh">
-        <div className="tile is-child anishib-bg-1 ghost-fade"></div>
-        <div className="tile is-child anishib-bg-2 ghost-fade"></div>
-        <div className="tile is-child anishib-bg-3 ghost-fade"></div>
-      </div>
-
-
-    </div>
-
-
-
-
-
-    <div className="level">
-      <div className="container pt-3 pl-3 is-fluid">
-        <h2>Historical Progress</h2>
-        <p>December 2021 - First wave (0.25 EGLD)</p>
-        <p>January 2022 - Second, Third, Fourth Waves (0.3 - 0.5 EGLD)</p>
-        <p>February 2022 - Fifth Wave Sells out in <strong>3 minutes</strong> 300 @ 0.6 EGLD</p>
-        <p>February 2022 - Exclusive Wave 6 / 100 Shibas / 0.8 EGLD</p>
-      </div>
-      <div className="container pt-3 pl-3 is-fluid">
-      <h2>Upcoming</h2>
-        <ul>
-          <li>50 EGLD Sweepstakes - for all Discord Members - No Purchase Necessary (20 Winners)</li>
-          <li><strong>Wave 7 @ 1400 UTC Feb 21/2022</strong> 0.6 EGLD ~ 300 Shibas</li>
-          <li>75 EGLD weepstakes - for all Discord Members - No Purchase Necessary (20 Winners)</li>
-          <li>Wave 8 & Beyond,  ? EGLD, remaining 2750 Shibas</li> 
-          <li>100 EGLD Sweepstakes - for all Discord Members - No Purchase Necessary (20 Winners)</li>
-        </ul>  
-      </div>
-    </div>
+        <div className="level center">
+          <div className="level section gray">1</div>
+          <div className="level section">2</div>
+          <div className="level section gray">3</div>
+          <AnimationOnScroll animateIn="animate__fadeInUp"><div className="level section">4</div></AnimationOnScroll>
+          <div className="level section gray">5</div>
+          <div className="level section">6</div>
+          <div className="level section gray">7</div>
         </div>
       </div>
 
     
-      <div className="section spacer-zone" id="whitepaper">
-
-      </div>
-
-      <div className="section spacer-zone 1">
-        <h1 className="dark-forest-text">Every Saturday at 1400 UTC your Shibas will bring you more! #ShibaSaturday </h1>
+      <div className="section spacer-zone">
+        <Link className="button" to="/whitepaper">Whitepaper</Link>
       </div>
   
-      <div className="section spacer-zone ">
+      <div className="section spacer-zone">
         <IO rootMargin = '-1px'>
         {({isVisible})=>(
         <FilmZone isVisible={isVisible}>
           <FilmStrip isVisible={isVisible}>
             <div className="images91"></div>
           </FilmStrip>
+          <p>Animation on scroll imminent
+          </p>
         </FilmZone>
         )}</IO>
       </div>

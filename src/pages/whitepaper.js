@@ -8,11 +8,9 @@ import WaflToken from "../components/WaflToken"
 const Whitepaper = () => (
   <Layout>
     <Seo title="Whitepaper" />
-    <div className="pl-2 pt-2">
-      <div className="container is-fluid eshib-bg-15">
-        <h1 className="whyt">Elrond Shibas v2</h1>
-        <h1>Introducing WAFL token and <h1 className="whyt">ShibaWorld</h1></h1>
-      </div>
+      <div className="navBar-safetypad"></div>
+      <div className="container is-fluid gray space-it-all">
+       <h1>Introducing WAFL token and <h1 className="whyt">ShibaWorld</h1></h1>
        <div className="level columns is-mobile">
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
@@ -22,7 +20,7 @@ const Whitepaper = () => (
       </div>
       <h2>TL;DR</h2>
       <p className="pr-5">Your Shibas and SFTs earn you WAFL daily and pay you each Wednesday. You get SFTs after 28 days of Shiba HODL.</p>
-      <div className="level columns is-mobile">
+      <div className="level columns is-mobile space-it-all">
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
@@ -39,15 +37,15 @@ const Whitepaper = () => (
         <li>Used to buy new collections</li>
         <li>Other use cases! Keep reading.</li>
       </ul>
-      <div className="container is-fluid eshib-bg-10">
+      <div className="container is-fluid gray space-it-all">
         <h2 className="pt-3">WAFL Distribution Details</h2>
-        <p>$WAFL is distributed every Wednesday 1430&nbsp;<a href="https://twitter.com/search?q=%24WAFL&src=cashtag_click" className="yikes">#WAFLWednesdays</a></p>
+        <p>$WAFL is distributed every Wednesday 1430 UTC &nbsp;<a href="https://twitter.com/search?q=%24WAFL&src=cashtag_click" className="peachy-txt">#WAFLWednesdays</a></p>
         <ul>
           <li>Each SHIB-50039b NFT in your wallet generates 1 $WAFL per day</li>
-          <li>Each <span className="yikes">Shiba Garden</span> SFT in your wallet generates 1 $WAFL per day</li>
-          <li>Each <span className="yikes">Shiba Farm</span> SFT in your wallet generates 2 $WAFL per day</li>
-          <li>Each <span className="yikes">Shiba Castle</span> SFT in your wallet generates 3 $WAFL per day</li>
-          <li>Each <span className="yikes">Shiba Spaceship</span> SFT in your wallet generates 4 $WAFL per day</li>
+          <li>Each <span className="peachy-txt">Shiba Garden</span> SFT generates 1 $WAFL per day</li>
+          <li>Each <span className="peachy-txt">Shiba Farm</span> SFT generates 2 $WAFL per day</li>
+          <li>Each <span className="peachy-txt">Shiba Castle</span> SFT generates 3 $WAFL per day</li>
+          <li>Each <span className="peachy-txt">Shiba Spaceship</span> SFT generates 4 $WAFL per day</li>
         </ul>
       </div>
       <h2>Earning SFTs</h2>
@@ -58,17 +56,17 @@ const Whitepaper = () => (
         <li>25+ NFTs earn you a SHIBA CASTLE SFT from SHIBWRLD</li>
         <li>50+ NFTs earn you a SHIBA SPACESHIP SFT from SHIBWRLD</li>
       </ul>
-      <div className="container is-fluid eshib-bg-10">
+      <div className="container is-fluid gray">
         <h2 className="pt-3">SHIBWRLD SFTs can be earned more than once (by holding for consecutive 28 day periods) and are TRADEABLE and SELLABLE</h2>
         <p>The SHIBWRLD NFT Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
         <table className="table is-narrow">
           <thead>
             <tr>
               <th></th>
-              <th>Launch<br/>2/2/2022</th>
-              <th>4 wks<br/>3/2/2022</th>
-              <th>8 wks<br/>3/30/2022</th>
-              <th>12 wks<br/>4/27/2022</th>
+              <th><span className="peachy-txt">Launch<br/>2/2/2022</span></th>
+              <th><span className="peachy-txt">4 wks<br/>3/2/2022</span></th>
+              <th><span className="peachy-txt">8 wks<br/>3/30/2022</span></th>
+              <th><span className="peachy-txt">12 wks<br/>4/27/2022</span></th>
             </tr>
           </thead>
           <tbody>

@@ -225,7 +225,7 @@ ul, ol {
   align-items: center;
   min-height: 25vh;
   padding: 4rem;
-  background: radial-gradient(#000000, #161717);
+  background: radial-gradient(#9FC7CD55, #161717, #000000);
 }
 
 .bottommost-text {
@@ -751,7 +751,6 @@ p {
 }
 @keyframes geez {
   0% { color: tomato; }
-  40% { color: red; }
   60% { color: #f0f; }
   80% { color: red; }
   100% { color: white }
@@ -777,7 +776,7 @@ p {
   border-radius: 3rem;
 }
 .button:hover {
-  background-color: #555;
+  background-color: #0d212f;
 }
 strong  {
   animation: geez 2s ease 0.35s infinite alternate;
@@ -788,6 +787,7 @@ strong  {
 .hero-text {
   font-size: 3.6rem;
   text-transform: uppercase;
+  display: inline;
 }
 .navicon {
   font-size: 0.7em;
@@ -826,10 +826,10 @@ strong  {
   background-color: #3333;
 }
 a {
-  color: white;
+  color: #9FC7CD;
 }
 a:hover {
-  animation: geez 0.5s ease 0.15s infinite alternate;
+  color: #f93;
 }
 .whyt {
   color: snow;
@@ -1019,8 +1019,20 @@ a:hover {
   }
 }
 
+@keyframes btn-implodes {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+.implosion-animation {
+  animation: btn-implodes 2s linear;
+}
 .special-btn {
-  background-color: #dd3000;
+  background: linear-gradient(45deg, #ff815b, #9fc7cd);
 }
 .float-above-it-all {
   position: absolute;
@@ -1069,7 +1081,7 @@ a:hover {
   }
 
   :hover {
-    color: blue;
+    color: #f93;
     ::after {
       width: 100%;
     }
@@ -1205,15 +1217,21 @@ filmstrip-lower {
 
 @keyframes wibble {
   from {
-    transform: skew(0deg, 0deg) rotate(0deg);
+    transform: skew(-2deg, -2deg) rotate(-2deg);
   }
 
   to {
-    transform: skew(3deg, 3deg) rotate(3deg);
+    transform: skew(2deg, 2deg) rotate(2deg);
   }
 }
 .anyshib {
-  animation-duration: 2s;
+  animation-duration: 6s;
+  animation-name: wibble;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.anyshib-2 {
+  animation-duration: 4.2s;
   animation-name: wibble;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -1225,12 +1243,31 @@ filmstrip-lower {
   border-radius: 0.5rem;
   width: 294px;
 }
+.wibble-card-2 {
+  padding: 12px;
+  border: 1px solid snow;
+  border-radius: 0.5rem;
+  width: 264px;
+}
 
+.navBar-safetypad {
+  height: 72px;
+  min-height: 72px;
+  z-index: 0;
+  opacity: 0;
+}
 
 
 .dark-forest-text {
   color: snow;
   text-shadow: 1px 1px 1px black;
+}
+.peachy-txt {
+  color: #ff815b;
+}
+
+.space-it-all * {
+  padding-bottom: 1vh;
 }
 
 @media only screen and (max-width: 2559px) {
