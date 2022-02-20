@@ -128,6 +128,14 @@ const Hamburger = styled.div`
   }
 `
 
+const ShibaStrip = styled.div`
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  height: 300%;
+  width: 160px;
+  opacity: 0.4;
+`
+
 const ScrollTo = styled.h4`
   background: #0000;
   border: black 0 solid;
@@ -233,37 +241,33 @@ const Navbar = () => {
             <div className="tile is-ancestor">
               <div className="tile is-parent">
                 <div className="tile is-child">
-                  <div className="splash-slides-6"></div>
+                  <ShibaStrip className="splash-slides-6"></ShibaStrip>
                 </div>
               </div>
               <div className="tile is-parent">
                 <div className="tile is-child">
-                  <div className="splash-slides-1"></div>
+                  <ShibaStrip className="splash-slides-1"></ShibaStrip>
                 </div>
               </div>
               <div className="tile is-parent">
-                <div className="tile is-child">
-                  <div className="splash-slides-2"></div>
+                <div className="tile is-child is-hidden-mobile">
+                  <ShibaStrip className="splash-slides-2"></ShibaStrip>
                 </div>
               </div>
             </div>
-            <div className="splash-btn special-btn p-3" open onClick={handleSplash}>Visit Shibaworld</div>
+            <div className="splash-btn special-btn center p-3" open onClick={handleSplash}>Visit Shibaworld</div>
           </SplashyShibsLeft>
           <SplashyShibsRight>
             <div className="tile is-ancestor">
               <div className="tile is-parent">
                 <div className="tile is-child">
-                  <div className="splash-slides-3"></div>
+                  <ShibaStrip className="splash-slides-3"></ShibaStrip>
                 </div>
-              </div>
-              <div className="tile is-parent">
                 <div className="tile is-child">
-                  <div className="splash-slides-4"></div>
+                  <ShibaStrip className="splash-slides-4"></ShibaStrip>
                 </div>
-              </div>
-              <div className="tile is-parent">
-                <div className="tile is-child">
-                  <div className="splash-slides-5"></div>
+                <div className="tile is-child is-hidden-mobile">
+                  <ShibaStrip className="splash-slides-5"></ShibaStrip>
                 </div>
               </div>
             </div>

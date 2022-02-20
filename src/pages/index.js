@@ -19,13 +19,13 @@ const IndexPage = () => (
       <div className="navBar-safetypad"></div>
       <div className="section columns">
         
-        <div className="column">
+        <div className="column is-6">
           <h1 className="hero-text">Shiba Passive Income Gang</h1>
           <p className="pb-4">The Elrond Shibas CDO expands upon traditional NFT clubs (DAOs) by offering passive income and rewarding continued membership. The team is building a ShibaWorld of NFTs and SFTs unlike anything Earth has ever seen. Adopt and join our expanding world of $WAFL tokens, Shiba SFTs, and much joyful borking, especially on Shiba Saturdays!</p>
           <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
         </div>
 
-        <div className="column is-2">
+        <div className="column">
           <div className="wibble-card anyshib">
             <StaticImage
               className="tiny-icon"
@@ -42,13 +42,12 @@ const IndexPage = () => (
               <p className="smoltext">"お前はもう死んでいる, bork"</p>
               <div className="level">
                 <p className="v-smoltext level-left">Rank 6 / 5000</p>
-                <p className="level-right pr-3"><a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities" className="v-smoltext">Traits</a></p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="column is-3 center">
+        <div className="column center">
           <div className="wibble-card-2 anyshib-2">
             <StaticImage
               className="tiny-icon"
@@ -65,13 +64,12 @@ const IndexPage = () => (
               <p className="smoltext">"Добро пожаловать на вечеринку! 🎉"</p>
               <div className="level">
                 <p className="smoltext level-left">Rank 21 / 5000</p>
-                <p className="smoltext level-right pr-3"><a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities">Traits</a></p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="column is-6">
+        <div className="column">
           <div className="wibble-card-3 anyshib-2">
             <StaticImage
               className="tiny-icon"
@@ -88,7 +86,6 @@ const IndexPage = () => (
               <p className="smoltext">"sânge și vafe 🩸🧇"</p>
               <div className="level">
                 <p className="smoltext level-left">Rank 4 / 5000</p>
-                <p className="smoltext level-right pr-3"><a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities">Traits</a></p>
               </div>
             </div>
           </div>

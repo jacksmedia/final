@@ -79,7 +79,7 @@ body {
   font-family: 'NeueMachina-Ultralight';
   font-size: 50%;
   color: $black;
-  background: linear-gradient(#4d0000, #161717);
+  background: linear-gradient(#000000, #161717);
 }
 
 hr {
@@ -225,7 +225,7 @@ ul, ol {
   align-items: center;
   min-height: 25vh;
   padding: 4rem;
-  background: radial-gradient(#9FC7CD55, #161717, #000000);
+  background: radial-gradient(#161717, #000000);
 }
 
 .bottommost-text {
@@ -532,58 +532,28 @@ h4, h5, h6 {
   min-height: 63vh;
 }
 .splash-slides-1 {
-  transform: translate3d(0, 0, 0);
   background: url(./images/shibbon1.png);
-  position: absolute;
-  height: 300%;
-  width: 160px;
   animation: slideshow2 33s infinite alternate;
-  opacity: 0.4;
 }
 .splash-slides-2 {
-  transform: translate3d(0, 0, 0);
   background: url(./images/shibbon2.png);
-  position: absolute;
-  height: 300%;
-  width: 160px;
   animation: slideshow2 41s infinite alternate;
-  opacity: 0.4;
 }
 .splash-slides-3 {
-  transform: translate3d(0, 0, 0);
   background: url(./images/shibbon3.png);
-  position: absolute;
-  height: 300%;
-  width: 160px;
   animation: slideshow2 28s infinite alternate;
-  opacity: 0.4;
 }
 .splash-slides-4 {
-  transform: translate3d(0, 0, 0);
   background: url(./images/shibbon4.png);
-  position: absolute;
-  height: 300%;
-  width: 160px;
   animation: slideshow2 47s infinite alternate;
-  opacity: 0.4;
 }
 .splash-slides-5 {
-  transform: translate3d(0, 0, 0);
   background: url(./images/shibbon5.png);
-  position: absolute;
-  height: 300%;
-  width: 160px;
   animation: slideshow2 36s infinite alternate;
-  opacity: 0.4;
 }
 .splash-slides-6 {
-  transform: translate3d(0, 0, 0);
   background: url(./images/shibbon6.png);
-  position: absolute;
-  height: 300%;
-  width: 160px;
   animation: slideshow2 53s infinite alternate;
-  opacity: 0.4;
 }
 
 
@@ -1269,21 +1239,21 @@ filmstrip-lower {
 }
 
 .wibble-card {
-  background: #4d0000;
+  background: #161717;
   padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
   width: 207px;
 }
 .wibble-card-2 {
-  background: #4d0000;
+  background: #161717;
   padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
   width: 264px;
 }
 .wibble-card-3 {
-  background: #4d0000;
+  background: #161717;
   padding: 11px;
   border: 1px solid snow;
   border-radius: 0.5rem;
