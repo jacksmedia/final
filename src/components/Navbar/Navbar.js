@@ -60,7 +60,7 @@ const ShibaStrip = styled.div`
   transform: translate3d(0, 0, 0);
   position: relative;
   background-repeat: no-repeat;
-  height: 300%;
+  height: 110%;
   opacity: 0.4;
   width: 140px;
   @media (max-width: 375px) { width: 60px; }

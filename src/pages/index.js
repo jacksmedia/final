@@ -15,20 +15,19 @@ const IndexPage = () => (
   <CookiesProvider>
     <Layout>
       <Seo title="Home" />
-      
       <div className="navBar-safetypad"></div>
+      
       <div className="section columns">
-        
-        <div className="column is-6">
+        <div className="column is-5">
           <h1 className="hero-text">Shiba Passive Income Gang</h1>
           <p className="pb-4">The Elrond Shibas CDO expands upon traditional NFT clubs (DAOs) by offering passive income and rewarding continued membership. The team is building a ShibaWorld of NFTs and SFTs unlike anything Earth has ever seen. Adopt and join our expanding world of $WAFL tokens, Shiba SFTs, and much joyful borking, especially on Shiba Saturdays!</p>
           <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
         </div>
 
-        <div className="column center">
+        <div className="column is-7 center">
           <div className="wibble-card anyshib">
             <StaticImage
-              className="tiny-icon"
+              className="tiny-icon center"
               layout="fixed"
               formats={["AUTO", "WEBP", "AVIF"]}
               src="../images/samuraishib.png"
@@ -51,22 +50,22 @@ const IndexPage = () => (
               className="tiny-icon"
               layout="fixed"
               formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/shibacula.png"
-              width={200}
-              height={200}
+              src="../images/es511.png"
+              width={216}
+              height={218}
               quality={95}
-              alt="Shibacula, who can bite other NFTs!"
+              alt="Gatsby, who prefers JSX to JS always, bork"
             />
             <div>
-              <p className="dark-forest-text">Elrond Shiba #3212</p>
-              <p className="smoltext">"sânge și vafe 🩸🧇"</p>
+              <p className="dark-forest-text">Elrond Shiba #511</p>
+              <p className="smoltext">"Only 6.5% Shibas earn Academia hats"</p>
               <div className="level">
-                <p className="smoltext level-left">Rank 4 / 5000</p>
+                <p className="smoltext level-left">Rank 4063 / 5000</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="center">
+        <div className="center is-hidden-tablet">
         <div className="wibble-card-2 anyshib-2">
             <StaticImage
               className="tiny-icon"
@@ -87,11 +86,13 @@ const IndexPage = () => (
             </div>
           </div>
         </div>
-
       </div>
 
       <div className="section" id="faq">    
+        {/*FAQ*/}
+
         <div className="navBar-safetypad"></div>
+        
         <div className="level center">
           <p className="hero-text">
             <AnimationOnScroll animateIn="animate__fadeInUp">F</AnimationOnScroll>
@@ -105,52 +106,142 @@ const IndexPage = () => (
             <p className="">Every Saturady at 1400 UTC your Elrond Shiba will bring LKMEX into your Maiar Wallet.</p>
             <p>Each Shiba NFT and every Shibaworld SFT also pays you $WAFL tokens, same time, on Wednesdays!</p>
             <p>Adopt an Elrond Shiba from a trusted marketplace today!!</p>
-            <p>Stay tuned to our social media for Mint news. <Link to="/wave7"><span className="yikes">Wave 7 is available in under 48 hours!</span></Link></p>
+            <p><Link to="/wave7"><span className="yikes">Wave 7 is minting right now!</span></Link></p>
+            <p><a href="https://mint.elrondshibas.com" className="button">MINT 0.6 EGLD!</a></p>
+            {/*  Marketplace btn
             <a href="https://deadrare.io/collection/SHIB-50039b" className="button">BUY NOW</a>
+            */}
           </div>
-
-          <div className="column"></div>
-        </div>
+          <div className="column">
+            <div className="center is-hidden-touch">
+            <div className="wibble-card-2 anyshib-2">
+              <StaticImage
+                className="tiny-icon"
+                layout="fixed"
+                formats={["AUTO", "WEBP", "AVIF"]}
+                src="../images/dobro.png"
+                width={240}
+                height={240}
+                quality={95}
+                alt="Elrond Shibas, the Russian partyboi"
+              />
+              <div>
+                <p className="dark-forest-text">Elrond Shiba #3212</p>
+                <p className="smoltext">"Добро пожаловать на вечеринку! 🎉"</p>
+                <div className="level">
+                  <p className="smoltext level-left">Rank 21 / 5000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        {/*FAQ*/}
+      </div>
       </div>
   
       <div className="section">
+        {/* roadmap */}
         <div className="navBar-safetypad" id="roadmap"></div>
+        
         <div className="level center">
           <AnimationOnScroll animateIn="animate__fadeInUp"><h1 className="hero-text">Roadmap</h1></AnimationOnScroll>
         </div>
-          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section min-30vh gray">
-            <p>Collab collections/fusions with other creators</p>
+        
+        <div>
+          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left columns">
+            <p className="column is-5">Collaboration / fusions with other collections-- Shibacula generates and uses $BLOOD thanks to Elrond Vampires collab</p>
+            <p className="column is-7 center">
+              <div className="wibble-card-3 anyshib-2">
+                <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/shibacula.png"
+                  width={216}
+                  height={216}
+                  quality={95}
+                  alt="Shibacula, who can bite other NFTs!"
+                />
+            <div className="">
+              <p className="dark-forest-text smoltext">Elrond Shiba #3412</p>
+              <p className="smoltext">"sânge și vafe 🩸🧇"</p>
+              <div className="">
+                <div className="smoltext pt-3">Rank 4 / 5000</div>
+              </div>
+            </div>
+          </div>
+            </p>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section min-30vh">
-            <h2>AniShib SFT collection will have ½ priced in EGLD & ½ in $WAFL</h2>
+          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right columns">
+            <h2 className="column is-3">AniShib SFT collection drops! Will offer ½ NFTs priced in EGLD & ½ in $WAFL</h2>
+            <div className="columns column is-9">
+              <div className="column">
+                 <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/anishib2.png"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Anime Shibas love you by default"
+                />
+              </div>
+              <div className="column">
+                 <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/anishib3.png"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Anime Shibas love you by default"
+                />
+              </div>
+              <div className="column is-hidden-touch">
+                 <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/anishib4.png"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Anime Shibas love you by default"
+                />
+              </div>
+            </div>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section min-30vh gray">
-            Elrond Shiba Merch Store coming 2022Q3, funded by CDO wallet royalties.
+          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left">
+            <span>Elrond Shiba Merch Store coming 2022Q3, funded by CDO wallet royalties.</span>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section min-30vh">
-            Use your Shiba NFT art however you want, copyfree! 3D Print YOUR NFT ontp shirts, hoodies, mugs-- sky is the limit, fren!
+          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right">
+            <span>Use your Shiba NFT art however you want, copyfree! 3D Print YOUR NFT ontp shirts, hoodies, mugs-- sky is the limit, fren!</span>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section min-30vh gray">
+          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left">
             <h2>3DSHIB SFT Collection drops, with ½ $WAFL scheme same as AniShib collection</h2>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section min-30vh">
-            Launch $WAFL token as Tradeable Asset on MaiarDex (Pending SEC Registration and other regulations)
+          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right columns">
+            <p className="column is-4"><BigWafl /></p>
+            <p className="column is-8"><span>Launch $WAFL token as Tradeable Asset on MaiarDex (Pending SEC Registration and other regulations)</span></p>
           </div></AnimationOnScroll>
         </div>
-
-    
-      <div className="section">
-        <Link className="button" to="/whitepaper">Whitepaper</Link>
+        
+        <div className="level center">
+          <Link className="button mt-5" to="/whitepaper">Whitepaper</Link>
+        </div>
+      {/* roadmap */}
       </div>
   
-      <div className="section">
-        <div className="slideshow"><div className="images01"></div></div>
-        <div className="slideshow"><div className="images02"></div></div>
+      <div className="section center filmstrip">
+        <div className="filmstrip-1"></div>
       </div>
 
-      <div className="section">
-        <Link to="/rarity" className="button">Rarity Trait Charts</Link>        
+      <div className="section center">
+        <Link to="/rarity" className="button">Rarity Trait Charts</Link>
       </div>
+
+    </div>
 
     </Layout>
   </CookiesProvider>

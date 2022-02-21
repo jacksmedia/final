@@ -10,7 +10,7 @@ const Whitepaper = () => (
     <Seo title="Whitepaper" />
       <div className="navBar-safetypad"></div>
       <div className="container is-fluid gray space-it-all">
-       <h1>Introducing WAFL token and <h1 className="whyt">ShibaWorld</h1></h1>
+       <h1 className="hero-text">Introducing WAFL token and <h1 className="whyt">ShibaWorld</h1></h1>
        <div className="level columns is-mobile">
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
@@ -33,11 +33,23 @@ const Whitepaper = () => (
         <li>When $WAFL is spent in ShibaWorld it is 100% BURNED</li>
         <li>$WAFL began emitting on 2/2/22</li>
         <li>Earned by holding Elrond Shibas (SHIB-50039b) NFT’s</li>
-        <li>Earned by holding SHIBWRLD SFT’s (Collection Coming Soon)</li>
-        <li>Used to buy new collections</li>
-        <li>Other use cases! Keep reading.</li>
+        <li>Earned by holding SHIBWRLD SFT’s (<span className="yikes">Collection Drops March 2nd</span>)</li>
+        <li>Used to buy new Elrond Shibas NFT collections (AniShib, 3DSHIB)</li>
+        <li>Other use cases will emerge!</li>
       </ul>
-      <div className="container is-fluid gray space-it-all">
+
+      <div className="container is-fluid gray p-2">
+        <h2>Earning SFTs from ShibaWorld</h2>
+        <p>After 28 days in your wallet...</p>
+        <ul>
+          <li>5 Elrond Shiba NFTs earn you a SHIBA GARDEN SFT (🌻)</li>
+          <li>10+ NFTs build you a SHIBA FARM SFT (🚜)</li>
+          <li>25+ NFTs establish a SHIBA CASTLE SFT (🏯)</li>
+          <li>50+ NFTs architect a SHIBA SPACESHIP SFT (🚀)</li>
+        </ul>
+      </div>
+
+      <div>
         <h2 className="pt-3">WAFL Distribution Details</h2>
         <p>$WAFL is distributed every Wednesday 1430 UTC &nbsp;<a href="https://twitter.com/search?q=%24WAFL&src=cashtag_click" className="peachy-txt">#WAFLWednesdays</a></p>
         <ul>
@@ -48,17 +60,10 @@ const Whitepaper = () => (
           <li>Each <span className="peachy-txt">Shiba Spaceship</span> SFT generates 4 $WAFL per day</li>
         </ul>
       </div>
-      <h2>Earning SFTs</h2>
-      <p>After 28 days in your wallet...</p>
-      <ul>
-        <li>5 SHIB-50039b NFTs earn you a SHIBA GARDEN SFT from SHIBWRLD</li>
-        <li>10+ NFTs earn you a SHIBA FARM SFT from SHIBWRLD</li>
-        <li>25+ NFTs earn you a SHIBA CASTLE SFT from SHIBWRLD</li>
-        <li>50+ NFTs earn you a SHIBA SPACESHIP SFT from SHIBWRLD</li>
-      </ul>
+
       <div className="container is-fluid gray pb-4">
         <h2 className="pt-3">SHIBWRLD SFTs can be earned more than once (by holding for consecutive 28 day periods) and are TRADEABLE and SELLABLE</h2>
-        <p>The SHIBWRLD NFT Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
+        <p>The SHIBWRLD Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
         <table className="table is-narrow">
           <thead>
             <tr>
@@ -115,6 +120,12 @@ const Whitepaper = () => (
           </tbody>
         </table>
       </div>
+        
+      <div className="container is-fluid gray pb-4">
+        <h2 className="pt-3">SHIBWRLD SFTs can be earned more than once (by holding for consecutive 28 day periods) and are TRADEABLE and SELLABLE</h2>
+        <p>The SHIBWRLD Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
+      </div>
+
     </div>
   </Layout>
 )
