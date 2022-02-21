@@ -531,29 +531,36 @@ h4, h5, h6 {
   max-height: 63vh;
   min-height: 63vh;
 }
+.slideshow3 {
+  position: relative;
+  overflow: hidden;
+  height: 63vh;
+  max-height: 63vh;
+  min-height: 63vh;
+}
 .splash-slides-1 {
   background: url(./images/shibbon1.png);
-  animation: slideshow2 33s infinite alternate;
+  animation: slideshow2 19s infinite alternate;
 }
 .splash-slides-2 {
   background: url(./images/shibbon2.png);
-  animation: slideshow2 41s infinite alternate;
+  animation: slideshow2 20s infinite alternate;
 }
 .splash-slides-3 {
   background: url(./images/shibbon3.png);
-  animation: slideshow2 28s infinite alternate;
+  animation: slideshow2 18s infinite alternate;
 }
 .splash-slides-4 {
   background: url(./images/shibbon4.png);
-  animation: slideshow2 47s infinite alternate;
+  animation: slideshow2 19s infinite alternate;
 }
 .splash-slides-5 {
   background: url(./images/shibbon5.png);
-  animation: slideshow2 36s infinite alternate;
+  animation: slideshow2 18s infinite alternate;
 }
 .splash-slides-6 {
   background: url(./images/shibbon6.png);
-  animation: slideshow2 53s infinite alternate;
+  animation: slideshow2 20s infinite alternate;
 }
 
 
@@ -1251,6 +1258,7 @@ filmstrip-lower {
   border: 1px solid snow;
   border-radius: 0.5rem;
   width: 264px;
+  height: auto;
 }
 .wibble-card-3 {
   background: #161717;

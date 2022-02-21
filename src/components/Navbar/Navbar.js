@@ -32,6 +32,9 @@ const SplashyShibsLeft = styled.div`
   margin: 0 auto;
   padding: 0 2vw;
   z-index: 1010;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-column-gap: 10px;
 `
 const SplashyShibsRight = styled.div`
   transition: all 0.3s ease-out;
@@ -49,7 +52,22 @@ const SplashyShibsRight = styled.div`
   margin: 0 auto;
   padding: 0 2vw;
   z-index: 1009;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-column-gap: 10px;
 `
+const ShibaStrip = styled.div`
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  background-repeat: no-repeat;
+  height: 300%;
+  opacity: 0.4;
+  width: 140px;
+  @media (max-width: 375px) { width: 60px; }
+  @media (max-width: 768px) { width: 118px; }
+`
+
+
 
 const TopBar = styled.nav`
   min-height: 72px;
@@ -126,14 +144,6 @@ const Hamburger = styled.div`
     transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
     top: 10px;
   }
-`
-
-const ShibaStrip = styled.div`
-  transform: translate3d(0, 0, 0);
-  position: absolute;
-  height: 300%;
-  width: 160px;
-  opacity: 0.4;
 `
 
 const ScrollTo = styled.h4`
@@ -238,39 +248,15 @@ const Navbar = () => {
           ) : (
           <>
           <SplashyShibsLeft>
-            <div className="tile is-ancestor">
-              <div className="tile is-parent">
-                <div className="tile is-child">
-                  <ShibaStrip className="splash-slides-6"></ShibaStrip>
-                </div>
-              </div>
-              <div className="tile is-parent">
-                <div className="tile is-child">
-                  <ShibaStrip className="splash-slides-1"></ShibaStrip>
-                </div>
-              </div>
-              <div className="tile is-parent">
-                <div className="tile is-child is-hidden-mobile">
-                  <ShibaStrip className="splash-slides-2"></ShibaStrip>
-                </div>
-              </div>
-            </div>
+            <ShibaStrip className="splash-slides-1"></ShibaStrip>
+            <ShibaStrip className="splash-slides-2"></ShibaStrip>
+            <ShibaStrip className="splash-slides-3"></ShibaStrip>
             <div className="splash-btn special-btn center p-3" open onClick={handleSplash}>Visit Shibaworld</div>
           </SplashyShibsLeft>
           <SplashyShibsRight>
-            <div className="tile is-ancestor">
-              <div className="tile is-parent">
-                <div className="tile is-child">
-                  <ShibaStrip className="splash-slides-3"></ShibaStrip>
-                </div>
-                <div className="tile is-child">
-                  <ShibaStrip className="splash-slides-4"></ShibaStrip>
-                </div>
-                <div className="tile is-child is-hidden-mobile">
-                  <ShibaStrip className="splash-slides-5"></ShibaStrip>
-                </div>
-              </div>
-            </div>
+            <ShibaStrip className="splash-slides-4"></ShibaStrip>
+            <ShibaStrip className="splash-slides-5"></ShibaStrip>
+            <ShibaStrip className="splash-slides-6"></ShibaStrip>
           </SplashyShibsRight>
           </>
           )

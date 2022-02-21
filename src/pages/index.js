@@ -25,7 +25,7 @@ const IndexPage = () => (
           <a href="https://discord.gg/ark67RKkrV" className="button">DISCORD</a>
         </div>
 
-        <div className="column">
+        <div className="column center">
           <div className="wibble-card anyshib">
             <StaticImage
               className="tiny-icon"
@@ -45,31 +45,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="column center">
-          <div className="wibble-card-2 anyshib-2">
-            <StaticImage
-              className="tiny-icon"
-              layout="fixed"
-              formats={["AUTO", "WEBP", "AVIF"]}
-              src="../images/dobro.png"
-              width={240}
-              height={240}
-              quality={95}
-              alt="Elrond Shibas, the Russian partyboi"
-            />
-            <div>
-              <p className="dark-forest-text">Elrond Shiba #3212</p>
-              <p className="smoltext">"Добро пожаловать на вечеринку! 🎉"</p>
-              <div className="level">
-                <p className="smoltext level-left">Rank 21 / 5000</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="column">
+        
           <div className="wibble-card-3 anyshib-2">
             <StaticImage
               className="tiny-icon"
@@ -86,6 +62,27 @@ const IndexPage = () => (
               <p className="smoltext">"sânge și vafe 🩸🧇"</p>
               <div className="level">
                 <p className="smoltext level-left">Rank 4 / 5000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="center">
+        <div className="wibble-card-2 anyshib-2">
+            <StaticImage
+              className="tiny-icon"
+              layout="fixed"
+              formats={["AUTO", "WEBP", "AVIF"]}
+              src="../images/dobro.png"
+              width={240}
+              height={240}
+              quality={95}
+              alt="Elrond Shibas, the Russian partyboi"
+            />
+            <div>
+              <p className="dark-forest-text">Elrond Shiba #3212</p>
+              <p className="smoltext">"Добро пожаловать на вечеринку! 🎉"</p>
+              <div className="level">
+                <p className="smoltext level-left">Rank 21 / 5000</p>
               </div>
             </div>
           </div>
