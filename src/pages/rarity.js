@@ -54,7 +54,10 @@ const Rarity = () => (
         alt="Shiba Fur types"
         style={{ marginBottom: `1.45rem` }}
       />
-     <p>The entire SHIB-50039b collection comprises 5000 NTFs.</p>
+     <div className="center">
+       <h3>The entire SHIB-50039b collection comprises 5000 NTFs.</h3>
+       <p>Peep legendary Shibs and view any doges for adoption <a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities">at DeadRare</a>.</p>
+      </div>
     </div>
   </Layout>
 )
