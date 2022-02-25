@@ -863,8 +863,9 @@ strong  {
   left: 0;
   top: 0;
   height: 314px;
-  width: 300%;
-  animation: slideshow 53s linear;
+  width: 100%;
+  animation: slideshow 3s infinite alternate;
+  opacity: 0.8;
 }
 .filmstrip-2 {
   background: url(./images/slide4.png);

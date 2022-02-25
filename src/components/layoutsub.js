@@ -4,14 +4,14 @@ import { Link } from 'gatsby'
 import { useCookies } from 'react-cookie'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Navbar from './Navbar/Navbar'
+import Navbar2 from './Navbar/Navbar2'
 import Footblur from './Footblur'
 
-const Layout = ({ location, title, children }) => {  
+const Layoutsub = ({ location, title, children }) => {  
   return (
     <div>
       <header>
-        <Navbar />
+        <Navbar2 />
       </header>
       <section className="mains">{children}</section>
        <div className="level is-mobile m-5">
@@ -26,4 +26,4 @@ const Layout = ({ location, title, children }) => {
   )
 }
 
-export default Layout;
+export default Layoutsub;

@@ -1,11 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import Layout from "../components/layout"
+import Layoutsub from "../components/layoutsub"
 import Seo from "../components/seo"
 
 const Rarity = () => (
-  <Layout>
+  <Layoutsub>
     <Seo title="Rarity" />
     <div className="container is-fluid pt-3">
       <div className="navBar-safetypad"></div>
@@ -59,7 +59,7 @@ const Rarity = () => (
        <p>Peep legendary Shibs and view any doges for adoption <a href="https://deadrare.io/collection/SHIB-50039b?tab=rarities">at DeadRare</a>.</p>
       </div>
     </div>
-  </Layout>
+  </Layoutsub>
 )
 
 export default Rarity

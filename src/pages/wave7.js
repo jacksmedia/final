@@ -1,12 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import Layout from "../components/layout"
+import Layoutsub from "../components/layoutsub"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
-
 const Wave7 = () => (
-  <Layout className="wave6-colors">
+  <Layoutsub>
     <Seo title="Wave 7" className="level is-mobile"/>
      <div className="">
        <div className="navBar-safetypad"></div>
@@ -27,7 +26,7 @@ const Wave7 = () => (
         <p className="button center"><a href="https://mint.elrondshibas.com/">Mint Here!</a></p>
       </div>
     </div>
-  </Layout>
+  </Layoutsub>
 )
 
 export default Wave7

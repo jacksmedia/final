@@ -3,9 +3,9 @@ module.exports = {
     title: `Elrond Shibas`,
     author: {
       name: `Elrond Shibas`,
-      summary: `collectible Shiba pets made of Egold`,
+      summary: `Shiba NFTs paying weekly passive income`,
     },
-    description: `collectible Shiba pets made of Egold`,
+    description: `Shiba NFTs paying weekly passive income`,
     siteUrl: `https://elrondshibas.com/`,
     social: {
       twitter: `elrondshibas`,

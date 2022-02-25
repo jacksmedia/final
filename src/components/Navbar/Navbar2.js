@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import scrollTo from 'gatsby-plugin-smoothscroll'
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -226,7 +224,7 @@ const NavItem = styled(Link)`
 `
 
 
-const Navbar = ({ location }) => {
+const Navbar2 = ({ location }) => {
   const [ isSplash, setSplash ] = useState(true)
   const handleSplash = () => {
     setSplash(!isSplash)
@@ -282,8 +280,8 @@ const Navbar = ({ location }) => {
 
             <div className="ml-3 mr-3">
               <div className="level">
-                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="level-left is-hoverable"><h4>FAQ</h4></ScrollTo>
-                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="level-item is-hoverable"><h4>Roadmap</h4></ScrollTo>
+                <Link to="/#faq" onClick={() => {handleNav()}} className="level-left is-hoverable"><h4>FAQ&nbsp;</h4></Link>
+                <Link to="/#roadmap" onClick={() => {handleNav()}} className="level-item is-hoverable"><h4>Roadmap</h4></Link>
                 <a href="https://mint.elrondshibas.com" className="level-right link-like is-hoverable "><h4>Mint</h4></a>
               </div>
               <hr className="is-hidden-tablet" />
@@ -304,10 +302,10 @@ const Navbar = ({ location }) => {
           <Navtray open onClick={handleNav}>
             
             <div className="">
-              <div className="">
-                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="is-hoverable">FAQ</ScrollTo>
-                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="is-hoverable">Roadmap</ScrollTo>
-                <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
+              <div className="level">
+                <Link to="/#faq" onClick={() => {handleNav()}} className="level-left is-hoverable"><h4>FAQ</h4></Link>
+                <Link to="/#roadmap" onClick={() => {handleNav()}} className="level-item is-hoverable"><h4>Roadmap</h4></Link>
+                <a href="https://mint.elrondshibas.com" className="level-right link-like is-hoverable "><h4>Mint</h4></a>
               </div>
               <hr className="is-hidden-tablet" />
               <div className="">
@@ -329,4 +327,4 @@ const Navbar = ({ location }) => {
   )
 }
 
-export default Navbar
+export default Navbar2

@@ -3,10 +3,9 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import { CookiesProvider, withCookies } from 'react-cookie'
-import Layout from '../components/layout'
 import WaflToken from '../components/WaflToken'
 import BigWafl from '../components/BigWafl'
-import LkmexToken from '../components/LkmexToken'
+import Layout from '../components/layout'
 import IO from '../components/io'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import Seo from '../components/seo'
@@ -162,7 +161,7 @@ const IndexPage = () => (
                   alt="Anime Shibas love you by default"
                 /><h6>Elrond Shiba Garden</h6>
               </div>
-              <div className="column">
+              <div className="column is-hidden-touch">
                  <StaticImage
                   className="tiny-icon"
                   layout="fixed"
@@ -276,6 +275,9 @@ const IndexPage = () => (
       {/* roadmap */}
       </div>
   
+      <div className="section center filmstrip">
+        <div className="filmstrip-2"></div>
+      </div>
       <div className="section center filmstrip">
         <div className="filmstrip-1"></div>
       </div>
