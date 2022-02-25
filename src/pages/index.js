@@ -147,6 +147,47 @@ const IndexPage = () => (
         </div>
         
         <div>
+           <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right columns">
+            <h2 className="column is-3">ShibaWorld SFTs appear, beginning March 2nd</h2>
+            <div className="column is-9 columns">
+              <div className="column">
+                 <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/garden.jpg"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Anime Shibas love you by default"
+                /><h6>Elrond Shiba Garden</h6>
+              </div>
+              <div className="column">
+                 <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/farm.jpg"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Anime Shibas love you by default"
+                /><h6>Elrond Shiba Farm</h6>
+              </div>
+              <div className="column">
+                 <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/castle.jpg"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Anime Shibas love you by default"
+                /><h6>Elrond Shiba Castle</h6>
+              </div>
+            </div>
+          </div></AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left columns">
             <p className="column is-5">Collaboration / fusions with other collections-- Shibacula generates and uses $BLOOD thanks to Elrond Vampires collab</p>
             <p className="column is-7 center">
@@ -172,7 +213,7 @@ const IndexPage = () => (
             </p>
           </div></AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right columns">
-            <h2 className="column is-3">AniShib SFT collection drops! Will offer ½ NFTs priced in EGLD & ½ in $WAFL</h2>
+            <h2 className="column is-3">AniShib NFT collection drops! Will offer ½ NFTs priced in EGLD & ½ in $WAFL</h2>
             <div className="columns column is-9">
               <div className="column">
                  <StaticImage
@@ -213,22 +254,24 @@ const IndexPage = () => (
             </div>
           </div></AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left">
-            <span>Elrond Shiba Merch Store coming 2022Q3, funded by CDO wallet royalties.</span>
+            <h2>Elrond Shiba Merch Store coming second half 2022</h2>
+            <p>Specs, Headpieces & Digs you can wear IRL-- funded by CDO wallet</p>
           </div></AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right">
-            <span>Use your Shiba NFT art however you want, copyfree! 3D Print YOUR NFT ontp shirts, hoodies, mugs-- sky is the limit, fren!</span>
+            <h2>3DSHIB NFT Collection drops, with ½ EGLD and ½ $WAFL sales</h2>
+            <p>Priced like the AniShib collection, these 3D Shiba will bring untold gifts...</p>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left">
-            <h2>3DSHIB SFT Collection drops, with ½ $WAFL scheme same as AniShib collection</h2>
-          </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right columns">
+          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left columns">
             <p className="column is-4"><BigWafl /></p>
             <p className="column is-8"><span>Launch $WAFL token as Tradeable Asset on MaiarDex (Pending SEC Registration and other regulations)</span></p>
           </div></AnimationOnScroll>
         </div>
         
-        <div className="level center">
-          <Link className="button mt-5" to="/whitepaper">Whitepaper</Link>
+        <div className="mt-5">
+          <p className="level center">Read the details in our WP!</p>
+          <div className="level center">
+            <Link className="button mt-3" to="/whitepaper">Whitepaper</Link>
+          </div>
         </div>
       {/* roadmap */}
       </div>

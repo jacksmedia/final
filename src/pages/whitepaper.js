@@ -9,61 +9,105 @@ const Whitepaper = () => (
   <Layout>
     <Seo title="Whitepaper" />
       <div className="navBar-safetypad"></div>
-      <div className="container is-fluid gray space-it-all">
+      <div className="container is-fluid gray space-it-all mb-5">
        <h1 className="hero-text">Introducing WAFL token and <h1 className="whyt">ShibaWorld</h1></h1>
-       <div className="level columns is-mobile">
-        <div className="column"><WaflToken /></div>
-        <div className="column"><WaflToken /></div>
-        <div className="column"><WaflToken /></div>
-        <div className="column"><WaflToken /></div>
-        <div className="column"><WaflToken /></div>
-      </div>
       <h2>TL;DR</h2>
-      <p className="pr-5">Your Shibas and SFTs earn you WAFL daily and pay you each Wednesday. You get SFTs after 28 days of Shiba HODL.</p>
-      <div className="level columns is-mobile space-it-all">
+      <p className="pr-5">Your NFTs and SFTs earn you $WAFL daily and pay you each Wednesday.</p><p>You get SFTs after 28 days of Shiba HODL.</p>
+      <div className="level columns is-mobile space-it-all mt-3">
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
         <div className="column"><WaflToken /></div>
       </div>
-      <h2>WAFL Token Facts</h2>
-      <p>There's a total supply of 20,000,000 $WAFL tokens. No more will ever be created.</p>
-      <ul>
-        <li>When $WAFL is spent in ShibaWorld it is 100% BURNED</li>
-        <li>$WAFL began emitting on 2/2/22</li>
-        <li>Earned by holding Elrond Shibas (SHIB-50039b) NFT’s</li>
-        <li>Earned by holding SHIBWRLD SFT’s (<span className="yikes">Collection Drops March 2nd</span>)</li>
-        <li>Used to buy new Elrond Shibas NFT collections (AniShib, 3DSHIB)</li>
-        <li>Other use cases will emerge!</li>
-      </ul>
+      <div className="container">
+        <h2>WAFL Token Facts</h2>
+        <p>There's a total supply of 20,000,000 $WAFL tokens. No more will ever be created.</p>
+        <ul>
+          <li>When $WAFL is spent in ShibaWorld it is 100% BURNED</li>
+          <li>$WAFL began emitting on 2/2/22</li>
+          <li>Earned by holding Elrond Shibas (SHIB-50039b) NFT’s</li>
+          <li>Earned by holding SHIBWRLD SFT’s (<span className="yikes">Collection Drops March 2nd</span>)</li>
+          <li>Used to buy new Elrond Shibas NFT collections (AniShib, 3DSHIB)</li>
+          <li>Other use cases will emerge!</li>
+        </ul>
+      </div>
 
       <div className="container is-fluid gray p-2">
         <h2>Earning SFTs from ShibaWorld</h2>
         <p>After 28 days in your wallet...</p>
         <ul>
-          <li>5 Elrond Shiba NFTs earn you a SHIBA GARDEN SFT (🌻)</li>
-          <li>10+ NFTs build you a SHIBA FARM SFT (🚜)</li>
-          <li>25+ NFTs establish a SHIBA CASTLE SFT (🏯)</li>
+          <li>5 Elrond Shiba NFTs earn you a SHIBA GARDEN SFT (🌷)</li>
+          <li>10+ NFTs build you a SHIBA FARM SFT (🌾)</li>
+          <li>25+ NFTs establish a SHIBA CASTLE SFT (🏰)</li>
           <li>50+ NFTs architect a SHIBA SPACESHIP SFT (🚀)</li>
         </ul>
       </div>
 
       <div>
+        <div className="level columns is-mobile">
+          <div className="column"><WaflToken /></div>
+          <div className="column"><WaflToken /></div>
+          <div className="column"><WaflToken /></div>
+          <div className="column"><WaflToken /></div>
+          <div className="column"><WaflToken /></div>
+        </div>
         <h2 className="pt-3">WAFL Distribution Details</h2>
         <p>$WAFL is distributed every Wednesday 1430 UTC &nbsp;<a href="https://twitter.com/search?q=%24WAFL&src=cashtag_click" className="peachy-txt">#WAFLWednesdays</a></p>
         <ul>
           <li>Each SHIB-50039b NFT in your wallet generates 1 $WAFL per day</li>
-          <li>Each <span className="peachy-txt">Shiba Garden</span> SFT generates 1 $WAFL per day</li>
-          <li>Each <span className="peachy-txt">Shiba Farm</span> SFT generates 2 $WAFL per day</li>
-          <li>Each <span className="peachy-txt">Shiba Castle</span> SFT generates 3 $WAFL per day</li>
-          <li>Each <span className="peachy-txt">Shiba Spaceship</span> SFT generates 4 $WAFL per day</li>
+          <li><p className="center">
+          <StaticImage
+        className=""
+        src="../images/garden.jpg"
+        width={120}
+        height={120}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="Shiba Fur types"
+        style={{ marginBottom: `1.45rem` }}
+      />
+          <p>Each <span className="peachy-txt">Shiba Garden</span> SFT generates 1 $WAFL per day</p></p></li>
+          <li><p className="center">
+          <StaticImage
+        className=""
+        src="../images/farm.jpg"
+        width={120}
+        height={120}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="Shiba Fur types"
+        style={{ marginBottom: `1.45rem` }}
+      />
+          <p>Each <span className="peachy-txt">Shiba Farm</span> SFT generates 2 $WAFL per day</p></p></li>
+          <li><p className="center">
+          <StaticImage
+        className=""
+        src="../images/castle.jpg"
+        width={120}
+        height={120}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="Shiba Fur types"
+        style={{ marginBottom: `1.45rem` }}
+      />
+          <p>Each <span className="peachy-txt">Shiba Castle</span> SFT generates 3 $WAFL per day</p></p></li>
+          <li><p className="center">
+          <StaticImage
+        className=""
+        src="../images/spaceship.jpg"
+        width={120}
+        height={120}
+        quality={95}
+        formats={["auto", "webp", "avif"]}
+        alt="Shiba Fur types"
+        style={{ marginBottom: `1.45rem` }}
+      />
+          <p>Each <span className="peachy-txt">Shiba Spaceship</span> SFT generates 4 $WAFL per day</p></p></li>
         </ul>
       </div>
 
       <div className="container is-fluid gray pb-4">
-        <h2 className="pt-3">SHIBWRLD SFTs can be earned more than once (by holding for consecutive 28 day periods) and are TRADEABLE and SELLABLE</h2>
-        <p>The SHIBWRLD Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
         <table className="table is-narrow">
           <thead>
             <tr>
@@ -121,7 +165,7 @@ const Whitepaper = () => (
         </table>
       </div>
         
-      <div className="container is-fluid gray pb-4">
+      <div className="container is-fluid pb-5">
         <h2 className="pt-3">SHIBWRLD SFTs can be earned more than once (by holding for consecutive 28 day periods) and are TRADEABLE and SELLABLE</h2>
         <p>The SHIBWRLD Collection is capped at 7777 SFTs. It is created in a First Mint, First Kept (FMFK) fashion-- many more Gardens will exist than any other SFT type, and Spaceships will only drop into the most dedicated Elrond Shiba collectors' wallets.</p>  
       </div>

@@ -8,11 +8,11 @@ import { faHome } from '@fortawesome/free-solid-svg-icons'
 import Navbar from './Navbar/Navbar'
 import Footblur from './Footblur'
 
-const Layout = ({ location, title, children }) => {  
+const Layout = ({ location, title, children, path }) => {  
   return (
     <div>
       <header>
-        <Navbar />
+        <Navbar path={path} />
       </header>
       <section className="mains">{children}</section>
        <div className="level is-mobile m-5">

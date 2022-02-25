@@ -112,7 +112,7 @@ h2 { font-size: var(--fontSize-5); }
 h3 { font-size: var(--fontSize-4); }
 h4 { font-size: var(--fontSize-3); }
 h5 { font-size: var(--fontSize-2); }
-h6 { font-size: var(--fontSize-1); }
+
 
 p {
   line-height: var(--lineHeight-relaxed);
@@ -153,6 +153,11 @@ figure {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   padding-bottom: 1.5rem;
   margin-bottom: 3.5rem;
+}
+
+li {
+  padding: 0.4rem;
+  font-size: 80%;
 }
 
 /* It Begins To Customise Its Code */
@@ -258,22 +263,19 @@ ul, ol {
 }
 @keyframes fun-summertime-palette-text {
   0% {
-    color: #555; 
+    color: coral; 
   }
   20% {
-    color: maroon; 
-  }
-  40% {
     color: red; 
   }
-  60% {
-    color: navy; 
-  }
-  65% {
+  40% {
     color: purple; 
   }
+  60% {
+    color: lilac; 
+  }
   80% {
-    color: #333; 
+    color: white; 
   }
 }
 
@@ -659,12 +661,12 @@ p {
 }
 .button {
   margin: 1.5vw;
-  background: ivory;
+  background: #111;
   font-size: 110%;
   border-radius: 3rem;
 }
 .button:hover {
-  background-color: #0d212f;
+  background-color: #333;
 }
 strong  {
   animation: geez 2s ease 0.35s infinite alternate;
@@ -680,7 +682,7 @@ strong  {
   font-size: 65%;
 }
 .hero-text {
-  font-size: 2.6rem;
+  font-size: 2.25rem;
   text-transform: uppercase;
   display: inline;
   @media(max-width: 375px) { font-size: 2rem;}
@@ -700,18 +702,26 @@ strong  {
 }
 
 .rounded-roadie-right {
-  border-radius: 3rem;
+  border-radius: 1.8rem;
   width: 90vw;
   background: #fff2;
 }
 .rounded-roadie-left {
-  border-radius: 3rem;
+  border-radius: 1.8rem;
   width: 90vw;
   background: #fff5;
 }
 .roady {
   margin-bottom: 5vh;
   margin-top: 5vh;
+}
+
+.level.section.roady {
+  border: 0.4rem groove #0008;
+}
+.level.section.roady::even {
+  padding: 2rem;
+  background: radial-gradient(rgba(99,99,99,0.5),rgba(199,199,199,0.7));
 }
 
 @keyframes btn-implodes {
@@ -937,6 +947,9 @@ strong  {
   color: #ff815b;
 }
 
+h6 {
+  font-size: 55%;
+}
 
 @media only screen and (max-width: 2559px) {
   th {
