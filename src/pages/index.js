@@ -275,12 +275,10 @@ const IndexPage = () => (
       {/* roadmap */}
       </div>
   
-      <div className="section center filmstrip">
-        <div className="filmstrip-2"></div>
-      </div>
-      <div className="section center filmstrip">
+      <div className="section center filmstrip-A negative-hollow">
         <div className="filmstrip-1"></div>
       </div>
+
 
       <div className="section center">
         <Link to="/rarity" className="button">Rarity Trait Charts</Link>

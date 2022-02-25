@@ -56,15 +56,13 @@ const SplashyShibsRight = styled.div`
   grid-template-columns: repeat(3, 33%);
   grid-column-gap: 10px;
 `
+
 const ShibaStrip = styled.div`
-  animation-direction: alternate-reverse;
   position: relative;
-  background-repeat: no-repeat;
   height: 110vh;
-  opacity: 0.4;
-  width: 140px;
-  @media (max-width: 375px) { width: 60px; }
-  @media (max-width: 768px) { width: 118px; }
+  opacity: 0.7;
+  @media (max-width: 375px) { width: 51px; }
+  @media (max-width: 768px) { width: 123px; }
 }
 `
 

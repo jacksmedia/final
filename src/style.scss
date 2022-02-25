@@ -251,28 +251,12 @@ ul, ol {
 
 
 /* animations code */
-@keyframes fun-summertime-palette-btn {
-  from {
-    background-color: $jacks-blue; 
-    color: white; 
-  }
-  to {
-    background-color: navy;
-    color: tomato; 
-  }
-}
 @keyframes fun-summertime-palette-text {
   0% {
     color: coral; 
   }
-  20% {
-    color: red; 
-  }
-  40% {
-    color: purple; 
-  }
   60% {
-    color: lilac; 
+    color: orange; 
   }
   80% {
     color: white; 
@@ -529,39 +513,52 @@ h4, h5, h6 {
 .slideshow2 {
   position: relative;
   overflow: hidden;
-  height: 63vh;
-  max-height: 63vh;
-  min-height: 63vh;
-}
-.slideshow-h {
-  position: relative;
-  overflow: hidden;
+  height: 110vh;
+  max-height: 110vh;
+  min-height: 110vh;
 }
 .splash-slides-1 {
   background: url(./images/shibbon1.png);
-  animation: slideshow2 19s infinite alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slideshow2 9s infinite alternate;
+  max-width: 15vw;
 }
 .splash-slides-2 {
   background: url(./images/shibbon2.png);
-  animation: slideshow2 20s infinite alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slideshow2 10s infinite alternate;
+  max-width: 15vw;
 }
 .splash-slides-3 {
   background: url(./images/shibbon3.png);
-  animation: slideshow2 18s infinite alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slideshow2 8s infinite alternate;
+  max-width: 15vw;
 }
 .splash-slides-4 {
   background: url(./images/shibbon4.png);
-  animation: slideshow2 19s infinite alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slideshow2 11s infinite alternate;
+  max-width: 15vw;
 }
 .splash-slides-5 {
   background: url(./images/shibbon5.png);
-  animation: slideshow2 18s infinite alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slideshow2 10s infinite alternate;
+  max-width: 15vw;
 }
 .splash-slides-6 {
   background: url(./images/shibbon6.png);
-  animation: slideshow2 20s infinite alternate;
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: slideshow2 8s infinite alternate;
+  max-width: 15vw;
 }
-
 
 .anishib-bg-1 {
   height: 100%;
@@ -584,12 +581,12 @@ h4, h5, h6 {
 }
 
 @keyframes slideshow {
-  0%    { left: 0; }
-  100%  { left: -200%; }
+  0%    { left: 10%; }
+  100%  { left: -70%; }
 }
 @keyframes slideshow2 {
-  0%    { top: 0; }
-  100%  { top: -200%; }
+  0%    { top: 0px; }
+  100%  { top: -111px; }
 }
 .svg-market-1 {
   color: white;
@@ -838,7 +835,7 @@ strong  {
   top: 0;
   height: 100%;
   width: 300%;
-  animation: slideshow 37s infinite alternate;
+  animation: slideshow 7s infinite alternate;
 }
 .images03 {
   transform: translate3d(0, 0, 0);
@@ -851,31 +848,36 @@ strong  {
   animation: slideshow 13s linear infinite;
 }
 
-.filmstrip{
+.negative-hollow {
+  min-height: 420px;
+}
+
+.filmstrip-A{
   transform: skew(0deg,-3deg);
-  width: 160vw;
   position: absolute;
   margin-top: 1vh;
 }
+.filmstrip-B{
+  transform: skew(0deg,3deg);
+  position: absolute;
+}
 .filmstrip-1 {
-  background: url(./images/slide1.png);
+  background: url(./images/strip-1.png);
   position: relative;
   left: 0;
   top: 0;
   height: 314px;
-  width: 100%;
-  animation: slideshow 3s infinite alternate;
-  opacity: 0.8;
+  width: 6652px;
+  animation: slideshow 21s infinite alternate;
+  opacity: 0.9;
 }
 .filmstrip-2 {
-  background: url(./images/slide4.png);
-  transform: translate3d(0, 0, 0);
+  background: url(./images/strip-2.png);
   position: relative;
-  background-repeat: no-repeat;
   height: 314px;
   opacity: 0.8;
-  width: 100%;
-  animation: slideshow2 39s infinite alternate;
+  width: 6652px;
+  animation: slideshow 13s infinite alternate;
 }
 
 
