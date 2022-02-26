@@ -187,10 +187,13 @@ const IndexPage = () => (
               </div>
             </div>
           </div></AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left columns">
-            <p className="column is-5">Collaboration / fusions with other collections-- Shibacula generates and uses $BLOOD thanks to Elrond Vampires collab</p>
-            <p className="column is-7 center">
-              <div className="wibble-card-3 anyshib-2">
+
+        {/* collabs */}
+          <AnimationOnScroll animateIn="animate__fadeInRight">
+          <div className="level section roady rounded-roadie-left">
+            <h3 className="">Collaborations with other NFT collections</h3>
+            <div className="columns">
+              <div className="column is-7">
                 <StaticImage
                   className="tiny-icon"
                   layout="fixed"
@@ -201,16 +204,44 @@ const IndexPage = () => (
                   quality={95}
                   alt="Shibacula, who can bite other NFTs!"
                 />
-            <div className="">
-              <p className="dark-forest-text smoltext">Elrond Shiba #3412</p>
-              <p className="smoltext">"sânge și vafe 🩸🧇"</p>
-              <div className="">
-                <div className="smoltext pt-3">Rank 4 / 5000</div>
+                <h6>Shibacula, who can bite other NFTs and yields $BLOOD (Elrond Vampires collab)</h6>
               </div>
+
+              <div className="column is-5 center">
+                <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/dojolayer.png"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Dojo Monsters collab"
+                />
+                <h6>Dojo Monsters' Shiba Layer</h6>
+              </div>
+
+              <div className="column is-10">
+                <StaticImage
+                  className="tiny-icon"
+                  layout="fixed"
+                  formats={["AUTO", "WEBP", "AVIF"]}
+                  src="../images/mysteryegg.png"
+                  width={180}
+                  height={180}
+                  quality={95}
+                  alt="Shibs come from Eggs, bork!"
+                />
+                <h6>Elrond Ducks CDO partnership, Announcing in March...</h6>
+              </div>
+
             </div>
+
           </div>
-            </p>
-          </div></AnimationOnScroll>
+          </AnimationOnScroll>
+
+
+        {/* AniShibs */}
           <AnimationOnScroll animateIn="animate__fadeInLeft"><div className="level section roady rounded-roadie-right columns">
             <h2 className="column is-3">AniShib NFT collection drops! Will offer ½ NFTs priced in EGLD & ½ in $WAFL</h2>
             <div className="columns column is-9">
@@ -262,7 +293,7 @@ const IndexPage = () => (
           </div></AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__fadeInRight"><div className="level section roady rounded-roadie-left columns">
             <p className="column is-4"><BigWafl /></p>
-            <p className="column is-8"><span>Launch $WAFL token as Tradeable Asset on MaiarDex (Pending SEC Registration and other regulations)</span></p>
+            <p className="column is-8">Launch $WAFL token as Tradeable Asset on MaiarDex<h6>(Pending SEC Registration and other regulations)</h6></p>
           </div></AnimationOnScroll>
         </div>
         
