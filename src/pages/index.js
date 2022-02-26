@@ -218,7 +218,7 @@ const IndexPage = () => (
                   quality={95}
                   alt="Dojo Monsters collab"
                 />
-                <h6>Dojo Monsters' Shiba Layer</h6>
+                <h6 className="p-3">Dojo Monsters' Shiba Layer</h6>
               </div>
 
               <div className="column is-10">
