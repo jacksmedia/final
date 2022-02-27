@@ -102,7 +102,7 @@ const IndexPage = () => (
 
         <div className="columns">
           <div className="column">
-            <p className="">Every Saturady at 1400 UTC your Elrond Shiba will bring LKMEX into your Maiar Wallet.</p>
+            <p className="">Every Saturday at 1400 UTC your Elrond Shiba will bring LKMEX into your Maiar Wallet.</p>
             <p>Each Shiba NFT and every Shibaworld SFT also pays you $WAFL tokens, same time, on Wednesdays!</p>
             <p>Adopt an Elrond Shiba from a trusted marketplace today!!</p>
             <p><Link to="/wave7"><span className="yikes">Wave 7 is minting right now!</span></Link></p>

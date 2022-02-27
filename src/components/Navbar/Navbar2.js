@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDiscord, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons'
@@ -54,15 +55,13 @@ const SplashyShibsRight = styled.div`
   grid-template-columns: repeat(3, 33%);
   grid-column-gap: 10px;
 `
+
 const ShibaStrip = styled.div`
-  animation-direction: alternate-reverse;
   position: relative;
-  background-repeat: no-repeat;
   height: 110vh;
-  opacity: 0.4;
-  width: 140px;
-  @media (max-width: 375px) { width: 60px; }
-  @media (max-width: 768px) { width: 118px; }
+  opacity: 0.7;
+  @media (max-width: 375px) { width: 51px; }
+  @media (max-width: 768px) { width: 123px; }
 }
 `
 
@@ -278,22 +277,48 @@ const Navbar2 = ({ location }) => {
         {navbarOpen ? (
           <Navtray>
 
-            <div className="ml-3 mr-3">
-              <div className="level">
-                <Link to="/#faq" onClick={() => {handleNav()}} className="level-left is-hoverable"><h4>FAQ&nbsp;</h4></Link>
-                <Link to="/#roadmap" onClick={() => {handleNav()}} className="level-item is-hoverable"><h4>Roadmap</h4></Link>
-                <a href="https://mint.elrondshibas.com" className="level-right link-like is-hoverable "><h4>Mint</h4></a>
+            <div className="">
+
+              <div className="ml-1 columns">
+                <div className="column"><Link to="/#faq" onClick={() => {handleNav()}} className="is-hoverable"><h4>FAQ</h4></Link></div>
+                <div className="column"><Link to="/#roadmap" onClick={() => {handleNav()}} className="is-hoverable"><h4>Roadmap</h4></Link></div>
+                <div className="column"><a href="https://mint.elrondshibas.com" className="link-like is-hoverable "><h4>Mint</h4></a></div>
               </div>
-              <hr className="is-hidden-tablet" />
-              <div className="">
-                <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Discord</span></NavItem>
-                <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Twitter</span></NavItem>
-                <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Insta</span></NavItem>
+              <hr className="is-hidden-touch" />
+              
+              <div className="center">
+                <NavItem href="https://discord.gg/ark67RKkrV">
+                  <FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><h6 className="is-hidden-touch">&nbsp;Discord</h6>
+                </NavItem>
+                <NavItem href="https://twitter.com/elrondshibas">
+                  <FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><h6 className="is-hidden-touch">&nbsp;Twitter</h6>
+                </NavItem>
+                <NavItem href="https://www.instagram.com/elrondshibas/" className="">
+                  <FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><h6 className="is-hidden-touch">&nbsp;Insta</h6>
+                </NavItem>
               </div>
-              <div className="">
-                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
-                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
-                <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="svg-market-3 is-hoverable"></div><div className="is-hidden-tablet">Isengard</div></NavItem>
+
+              <div className="m-1 columns is-mobile">
+                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-2 is-hoverable"></div><div className="is-hidden-touch"><h6>DeadRare</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://trust.market/collection/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-1 is-hoverable"></div><div className="is-hidden-touch"><h6>TrustMarket</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://elrondnftswap.com/collection/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-3 is-hoverable"></div><div className="is-hidden-touch"><h6>NFTSwap</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://www.frameit.gg/marketplace/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-5 is-hoverable"></div><div className="is-hidden-touch"><h6>Frame It</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://isengard.market/profile/ElrondShibas" className="is-hoverable center column">
+                  <div className="center svg-market-4 is-hoverable"></div><div className="is-hidden-touch"><h6>Isengard</h6>
+                  </div>
+                </NavItem>
               </div>
             </div>
           
@@ -302,21 +327,29 @@ const Navbar2 = ({ location }) => {
           <Navtray open onClick={handleNav}>
             
             <div className="">
-              <div className="level">
-                <Link to="/#faq" onClick={() => {handleNav()}} className="level-left is-hoverable"><h4>FAQ</h4></Link>
-                <Link to="/#roadmap" onClick={() => {handleNav()}} className="level-item is-hoverable"><h4>Roadmap</h4></Link>
-                <a href="https://mint.elrondshibas.com" className="level-right link-like is-hoverable "><h4>Mint</h4></a>
-              </div>
-              <hr className="is-hidden-tablet" />
               <div className="">
-                <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Discord</span></NavItem>
-                <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Twitter</span></NavItem>
-                <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Insta</span></NavItem>
+                <div className="column"><Link to="/#faq" onClick={() => {handleNav()}} className="is-hoverable"><h4>FAQ</h4></Link></div>
+                <div className="column"><Link to="/#roadmap" onClick={() => {handleNav()}} className="is-hoverable"><h4>Roadmap</h4></Link></div>
+                <div className="column"><a href="https://mint.elrondshibas.com" className="link-like is-hoverable "><h4>Mint</h4></a></div>
+              </div>
+              <hr className="is-hidden-touch" />
+              <div className="">
+                <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-touch">&nbsp;Discord</span></NavItem>
+                <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-touch">&nbsp;Twitter</span></NavItem>
+                <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-touch">&nbsp;Insta</span></NavItem>
               </div>
               <div className="">
-                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
-                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
-                <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="svg-market-3 is-hoverable"></div><div className="is-hidden-tablet">Isengard</div></NavItem>
+                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="center svg-market-2 is-hoverable"></div><div className="is-hidden-touch">DeadRare</div></NavItem>
+                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="center svg-market-1 is-hoverable"></div><div className="is-hidden-touch" className="is-hidden-touch">TrustMarket</div></NavItem>
+                <NavItem href="https://elrondnftswap.com/collection/SHIB-50039b" className=" is-hoverable">
+                  <div className="center svg-market-3 is-hoverable"></div><div className="is-hidden-touch">NFTSwap
+                  </div>
+                </NavItem>
+                <NavItem href="https://www.frameit.gg/marketplace/SHIB-50039b" className=" is-hoverable">
+                  <div className="center svg-market-5 is-hoverable"></div><div className="is-hidden-touch">Frame It
+                  </div>
+                </NavItem>
+                <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="center svg-market-4 is-hoverable"></div><div className="is-hidden-touch">Isengard</div></NavItem>
               </div>
             </div>
 
