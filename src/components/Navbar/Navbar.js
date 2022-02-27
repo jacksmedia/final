@@ -225,7 +225,7 @@ const NavItem = styled(Link)`
 
 
 const Navbar = ({ location }) => {
-  const [ isSplash, setSplash ] = useState(true)
+  const [ isSplash, setSplash ] = useState(false)
   const handleSplash = () => {
     setSplash(!isSplash)
   }
@@ -278,22 +278,48 @@ const Navbar = ({ location }) => {
         {navbarOpen ? (
           <Navtray>
 
-            <div className="ml-3 mr-3">
-              <div className="level">
-                <ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="level-left is-hoverable"><h4>FAQ</h4></ScrollTo>
-                <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="level-item is-hoverable"><h4>Roadmap</h4></ScrollTo>
-                <a href="https://mint.elrondshibas.com" className="level-right link-like is-hoverable "><h4>Mint</h4></a>
+            <div className="">
+
+              <div className="ml-1 columns">
+                <div className="column"><ScrollTo onClick={() => {handleNav();scrollTo('#faq')}} className="is-hoverable"><h4>FAQ</h4></ScrollTo></div>
+                <div className="column"><ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="is-hoverable"><h4>Roadmap</h4></ScrollTo></div>
+                <div className="column"><a href="https://mint.elrondshibas.com" className="link-like is-hoverable "><h4>Mint</h4></a></div>
               </div>
-              <hr className="is-hidden-tablet" />
-              <div className="">
-                <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Discord</span></NavItem>
-                <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Twitter</span></NavItem>
-                <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Insta</span></NavItem>
+              <hr className="is-hidden-touch" />
+              
+              <div className="center">
+                <NavItem href="https://discord.gg/ark67RKkrV">
+                  <FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><h6 className="is-hidden-touch">&nbsp;Discord</h6>
+                </NavItem>
+                <NavItem href="https://twitter.com/elrondshibas">
+                  <FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><h6 className="is-hidden-touch">&nbsp;Twitter</h6>
+                </NavItem>
+                <NavItem href="https://www.instagram.com/elrondshibas/" className="">
+                  <FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><h6 className="is-hidden-touch">&nbsp;Insta</h6>
+                </NavItem>
               </div>
-              <div className="">
-                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
-                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
-                <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="svg-market-3 is-hoverable"></div><div className="is-hidden-tablet">Isengard</div></NavItem>
+
+              <div className="m-1 columns is-mobile">
+                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-2 is-hoverable"></div><div className="is-hidden-touch"><h6>DeadRare</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://trust.market/collection/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-1 is-hoverable"></div><div className="is-hidden-touch"><h6>TrustMarket</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://elrondnftswap.com/collection/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-3 is-hoverable"></div><div className="is-hidden-touch"><h6>NFTSwap</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://www.frameit.gg/marketplace/SHIB-50039b" className="is-hoverable center column">
+                  <div className="center svg-market-5 is-hoverable"></div><div className="is-hidden-touch"><h6>Frame It</h6>
+                  </div>
+                </NavItem>
+                <NavItem href="https://isengard.market/profile/ElrondShibas" className="is-hoverable center column">
+                  <div className="center svg-market-4 is-hoverable"></div><div className="is-hidden-touch"><h6>Isengard</h6>
+                  </div>
+                </NavItem>
               </div>
             </div>
           
@@ -307,16 +333,24 @@ const Navbar = ({ location }) => {
                 <ScrollTo onClick={() => {handleNav();scrollTo('#roadmap')}} className="is-hoverable">Roadmap</ScrollTo>
                 <a href="https://mint.elrondshibas.com" className="link-like is-hoverable ">Mint</a>
               </div>
-              <hr className="is-hidden-tablet" />
+              <hr className="is-hidden-touch" />
               <div className="">
-                <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Discord</span></NavItem>
-                <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Twitter</span></NavItem>
-                <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-tablet">&nbsp;Insta</span></NavItem>
+                <NavItem href="https://discord.gg/ark67RKkrV" className="is-hoverable"><FontAwesomeIcon icon={faDiscord} className="is-hoverable" /><span className="is-hidden-touch">&nbsp;Discord</span></NavItem>
+                <NavItem href="https://twitter.com/elrondshibas" className="is-hoverable"><FontAwesomeIcon icon={faTwitter} className="is-hoverable" /><span className="is-hidden-touch">&nbsp;Twitter</span></NavItem>
+                <NavItem href="https://www.instagram.com/elrondshibas/" className="is-hoverable"><FontAwesomeIcon icon={faInstagram} className="is-hoverable" /><span className="is-hidden-touch">&nbsp;Insta</span></NavItem>
               </div>
               <div className="">
-                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-2 is-hoverable"></div><div className="is-hidden-tablet">DeadRare</div></NavItem>
-                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="svg-market-1 is-hoverable"></div><div className="is-hidden-tablet" className="is-hidden-tablet">TrustMarket</div></NavItem>
-                <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="svg-market-3 is-hoverable"></div><div className="is-hidden-tablet">Isengard</div></NavItem>
+                <NavItem href="https://deadrare.io/collection/SHIB-50039b" className=" is-hoverable"><div className="center svg-market-2 is-hoverable"></div><div className="is-hidden-touch">DeadRare</div></NavItem>
+                <NavItem href="https://trust.market/collection/SHIB-50039b" className=" is-hoverable"><div className="center svg-market-1 is-hoverable"></div><div className="is-hidden-touch" className="is-hidden-touch">TrustMarket</div></NavItem>
+                <NavItem href="https://elrondnftswap.com/collection/SHIB-50039b" className=" is-hoverable">
+                  <div className="center svg-market-3 is-hoverable"></div><div className="is-hidden-touch">NFTSwap
+                  </div>
+                </NavItem>
+                <NavItem href="https://www.frameit.gg/marketplace/SHIB-50039b" className=" is-hoverable">
+                  <div className="center svg-market-5 is-hoverable"></div><div className="is-hidden-touch">Frame It
+                  </div>
+                </NavItem>
+                <NavItem href="https://isengard.market/profile/ElrondShibas" className=" is-hoverable"><div className="center svg-market-4 is-hoverable"></div><div className="is-hidden-touch">Isengard</div></NavItem>
               </div>
             </div>
 

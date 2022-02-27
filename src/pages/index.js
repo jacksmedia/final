@@ -220,7 +220,7 @@ const IndexPage = () => (
                 />
                 <h6 className="p-3">Dojo Monsters' Shiba Layer</h6>
               </div>
-
+{/*
               <div className="column is-10">
                 <StaticImage
                   className="tiny-icon"
@@ -234,7 +234,7 @@ const IndexPage = () => (
                 />
                 <h6>Elrond Ducks CDO partnership, Announcing in March...</h6>
               </div>
-
+*/}
             </div>
 
           </div>

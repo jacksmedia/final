@@ -323,27 +323,6 @@ h1, h2 {
   font-family: 'NeueMachina-Ultrabold';
 }
 
-.svg-market-1 {
-  background-image: url(./images/deadrare.svg);
-  width: 12px;
-  height: 20px;
-  background-size: cover;
-}
-.svg-market-2 {
-  background-image: url(./images/trustmarket.svg);
-  width: 36px;
-  height: 15px;
-  background-size: cover;
-}
-.svg-market-3 {
-  background-image: url(./images/isengard.svg);
-  width: 8px;
-  height: 20px;
-  background-size: cover;
-}
-
-
-
 .fade {
   animation: fade-out-keyframes 1s;
 }
@@ -602,6 +581,30 @@ h4, h5, h6 {
   height: 20px;
   background-size: cover;
 }
+.svg-market-3 {
+  background-image: url(./images/klogo.svg);
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+}
+.svg-market-4 {
+  color: white;
+  background-image: url(./images/isengard.svg);
+  width: 8px;
+  height: 20px;
+  background-size: cover;
+}
+.svg-market-5 {
+  color: white;
+  background-image: url(./images/filogo.svg);
+  width: 16px;
+  height: 20px;
+  background-size: cover;
+}
+
+
+
+
 
 .gray {
   background-color: #3338;
