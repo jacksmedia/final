@@ -13,7 +13,7 @@ import Seo from '../components/seo'
 const IndexPage = () => (
   <CookiesProvider>
     <Layout>
-      <Seo title="Home" />
+      <Seo title="Elrond Shibas" />
       <div className="navBar-safetypad"></div>
       
       <div className="section columns">

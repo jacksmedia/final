@@ -225,7 +225,7 @@ const NavItem = styled(Link)`
 
 
 const Navbar = ({ location }) => {
-  const [ isSplash, setSplash ] = useState(true)
+  const [ isSplash, setSplash ] = useState(false)
   const handleSplash = () => {
     setSplash(!isSplash)
   }
